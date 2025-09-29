@@ -1,0 +1,109 @@
+[
+  {"state":"Acre","question":"Capital do Acre?","options":["Rio Branco","Cruzeiro do Sul","Tarauacá","Sena Madureira"],"answerIndex":0},
+  {"state":"Acre","question":"Região do Brasil do Acre?","options":["Norte","Nordeste","Sul","Sudeste"],"answerIndex":0},
+  {"state":"Acre","question":"Fronteira internacional do Acre:","options":["Peru","Uruguai","Paraguai","Guiana"],"answerIndex":0},
+
+  {"state":"Alagoas","question":"Capital de Alagoas?","options":["Maceió","Aracaju","Natal","Recife"],"answerIndex":0},
+  {"state":"Alagoas","question":"Praia famosa em Alagoas:","options":["Maragogi","Copacabana","Boa Viagem","Ponta Negra"],"answerIndex":0},
+  {"state":"Alagoas","question":"Alagoas fica em qual região?","options":["Nordeste","Centro-Oeste","Norte","Sul"],"answerIndex":0},
+
+  {"state":"Amapá","question":"Capital do Amapá?","options":["Macapá","Boa Vista","Belém","Manaus"],"answerIndex":0},
+  {"state":"Amapá","question":"O Amapá é cortado por qual linha?","options":["Equador","Trópico de Capricórnio","Trópico de Câncer","Meridiano de Greenwich"],"answerIndex":0},
+  {"state":"Amapá","question":"Rio importante no Amapá:","options":["Amazonas","Tietê","Paraná","São Francisco"],"answerIndex":0},
+
+  {"state":"Amazonas","question":"Capital do Amazonas?","options":["Manaus","Porto Velho","Belém","Macapá"],"answerIndex":0},
+  {"state":"Amazonas","question":"Atração natural famosa:","options":["Encontro das Águas","Lençóis Maranhenses","Chapada Diamantina","Pantanal"],"answerIndex":0},
+  {"state":"Amazonas","question":"Região do Amazonas:","options":["Norte","Sul","Sudeste","Centro-Oeste"],"answerIndex":0},
+
+  {"state":"Bahia","question":"Capital da Bahia?","options":["Salvador","Feira de Santana","Ilhéus","Porto Seguro"],"answerIndex":0},
+  {"state":"Bahia","question":"Comida típica baiana:","options":["Acarajé","Churrasco","Pinhão","Tacacá"],"answerIndex":0},
+  {"state":"Bahia","question":"Região da Bahia:","options":["Nordeste","Norte","Sul","Centro-Oeste"],"answerIndex":0},
+
+  {"state":"Ceará","question":"Capital do Ceará?","options":["Fortaleza","Natal","Maceió","São Luís"],"answerIndex":0},
+  {"state":"Ceará","question":"Praia famosa do Ceará:","options":["Jericoacoara","Copacabana","Boa Viagem","Ponta Verde"],"answerIndex":0},
+  {"state":"Ceará","question":"Região do Ceará:","options":["Nordeste","Sul","Sudeste","Norte"],"answerIndex":0},
+
+  {"state":"Distrito Federal","question":"Capital do Brasil:","options":["Brasília","Rio de Janeiro","São Paulo","Belo Horizonte"],"answerIndex":0},
+  {"state":"Distrito Federal","question":"Plano da cidade de Brasília é em forma de:","options":["Avião","Quadrado","Círculo","Estrela"],"answerIndex":0},
+  {"state":"Distrito Federal","question":"Lago famoso no DF:","options":["Paranoá","Iguaçu","Guaíba","Paranoá do Norte"],"answerIndex":0},
+
+  {"state":"Espírito Santo","question":"Capital do ES?","options":["Vitória","Vila Velha","Serra","Cariacica"],"answerIndex":0},
+  {"state":"Espírito Santo","question":"Ilha famosa próxima à capital:","options":["Ilha do Boi","Ilhabela","Ilha Grande","Ilha de Marajó"],"answerIndex":0},
+  {"state":"Espírito Santo","question":"Região do ES:","options":["Sudeste","Nordeste","Norte","Sul"],"answerIndex":0},
+
+  {"state":"Goiás","question":"Capital de Goiás?","options":["Goiânia","Anápolis","Aparecida de Goiânia","Caldas Novas"],"answerIndex":0},
+  {"state":"Goiás","question":"Atração turística goiana:","options":["Chapada dos Veadeiros","Pantanal","Lençóis Maranhenses","Amazônia"],"answerIndex":0},
+  {"state":"Goiás","question":"Região de Goiás:","options":["Centro-Oeste","Sudeste","Nordeste","Norte"],"answerIndex":0},
+
+  {"state":"Maranhão","question":"Capital do Maranhão?","options":["São Luís","Teresina","Fortaleza","Belém"],"answerIndex":0},
+  {"state":"Maranhão","question":"Paisagem famosa:","options":["Lençóis Maranhenses","Serra do Mar","Chapada dos Veadeiros","Chapada Diamantina"],"answerIndex":0},
+  {"state":"Maranhão","question":"Região do Maranhão:","options":["Nordeste","Norte","Sul","Sudeste"],"answerIndex":0},
+
+  {"state":"Mato Grosso","question":"Capital de Mato Grosso?","options":["Cuiabá","Campo Grande","Goiânia","Palmas"],"answerIndex":0},
+  {"state":"Mato Grosso","question":"Bioma presente no estado:","options":["Pantanal","Pampa","Mata Atlântica","Caatinga"],"answerIndex":0},
+  {"state":"Mato Grosso","question":"Região de Mato Grosso:","options":["Centro-Oeste","Norte","Sudeste","Sul"],"answerIndex":0},
+
+  {"state":"Mato Grosso do Sul","question":"Capital de MS?","options":["Campo Grande","Cuiabá","Dourados","Corumbá"],"answerIndex":0},
+  {"state":"Mato Grosso do Sul","question":"Atração natural em MS:","options":["Bonito","Jericoacoara","Ilhabela","Gramado"],"answerIndex":0},
+  {"state":"Mato Grosso do Sul","question":"Bioma marcante:","options":["Pantanal","Amazônia","Pampa","Caatinga"],"answerIndex":0},
+
+  {"state":"Minas Gerais","question":"Capital mineira?","options":["Belo Horizonte","Ouro Preto","Uberlândia","Juiz de Fora"],"answerIndex":0},
+  {"state":"Minas Gerais","question":"Doce famoso em MG:","options":["Doce de leite","Acarajé","Tacacá","Barreado"],"answerIndex":0},
+  {"state":"Minas Gerais","question":"Conjunto montanhoso:","options":["Serra do Cipó","Serra do Mar","Chapada das Mesas","Serra Geral"],"answerIndex":0},
+
+  {"state":"Pará","question":"Capital do Pará?","options":["Belém","Manaus","Macapá","Boa Vista"],"answerIndex":0},
+  {"state":"Pará","question":"Bebida típica:","options":["Açaí","Chimarrão","Caldo de cana","Cajuína"],"answerIndex":0},
+  {"state":"Pará","question":"Ilha famosa do Pará:","options":["Marajó","Ilhabela","Ilha Grande","Fernando de Noronha"],"answerIndex":0},
+
+  {"state":"Paraíba","question":"Capital da Paraíba?","options":["João Pessoa","Campina Grande","Patos","Sousa"],"answerIndex":0},
+  {"state":"Paraíba","question":"Ponto turístico famoso:","options":["Cabo Branco","Pão de Açúcar","Porto da Barra","Pico da Bandeira"],"answerIndex":0},
+  {"state":"Paraíba","question":"Região da Paraíba:","options":["Nordeste","Norte","Sul","Sudeste"],"answerIndex":0},
+
+  {"state":"Paraná","question":"Capital do Paraná?","options":["Curitiba","Londrina","Maringá","Cascavel"],"answerIndex":0},
+  {"state":"Paraná","question":"Queda d'água famosa:","options":["Cataratas do Iguaçu","Caracol","Itiquira","Água Branca"],"answerIndex":0},
+  {"state":"Paraná","question":"Região do Paraná:","options":["Sul","Sudeste","Norte","Centro-Oeste"],"answerIndex":0},
+
+  {"state":"Pernambuco","question":"Capital de Pernambuco?","options":["Recife","Olinda","Petrolina","Caruaru"],"answerIndex":0},
+  {"state":"Pernambuco","question":"Festa famosa:","options":["Galo da Madrugada","Boi-Bumbá","Oktoberfest","Parintins"],"answerIndex":0},
+  {"state":"Pernambuco","question":"Praia famosa:","options":["Porto de Galinhas","Copacabana","Boa Viagem","Pipa"],"answerIndex":0},
+
+  {"state":"Piauí","question":"Capital do Piauí?","options":["Teresina","Fortaleza","São Luís","Natal"],"answerIndex":0},
+  {"state":"Piauí","question":"Parque nacional no estado:","options":["Serra da Capivara","Lençóis Maranhenses","Iguaçu","Chapada dos Veadeiros"],"answerIndex":0},
+  {"state":"Piauí","question":"Região do Piauí:","options":["Nordeste","Norte","Sul","Sudeste"],"answerIndex":0},
+
+  {"state":"Rio de Janeiro","question":"Capital do RJ?","options":["Rio de Janeiro","Niterói","Duque de Caxias","Petrópolis"],"answerIndex":0},
+  {"state":"Rio de Janeiro","question":"Estátua famosa:","options":["Cristo Redentor","Liberdade","La Victoria","Manneken Pis"],"answerIndex":0},
+  {"state":"Rio de Janeiro","question":"Praia conhecida:","options":["Copacabana","Boa Viagem","Praia do Futuro","Atalaia"],"answerIndex":0},
+
+  {"state":"Rio Grande do Norte","question":"Capital do RN?","options":["Natal","Mossoró","Parnamirim","Caicó"],"answerIndex":0},
+  {"state":"Rio Grande do Norte","question":"Duna famosa:","options":["Genipabu","Jalapão","Lençóis","Atins"],"answerIndex":0},
+  {"state":"Rio Grande do Norte","question":"Região do RN:","options":["Nordeste","Norte","Sul","Sudeste"],"answerIndex":0},
+
+  {"state":"Rio Grande do Sul","question":"Capital do RS?","options":["Porto Alegre","Caxias do Sul","Pelotas","Santa Maria"],"answerIndex":0},
+  {"state":"Rio Grande do Sul","question":"Bebida típica:","options":["Chimarrão","Guaraná Jesus","Caldo de cana","Cajuína"],"answerIndex":0},
+  {"state":"Rio Grande do Sul","question":"Região do RS:","options":["Sul","Sudeste","Centro-Oeste","Norte"],"answerIndex":0},
+
+  {"state":"Rondônia","question":"Capital de Rondônia?","options":["Porto Velho","Rio Branco","Boa Vista","Macapá"],"answerIndex":0},
+  {"state":"Rondônia","question":"Região de Rondônia:","options":["Norte","Nordeste","Sul","Sudeste"],"answerIndex":0},
+  {"state":"Rondônia","question":"Rio que passa pela capital:","options":["Madeira","Paraná","Tietê","Doce"],"answerIndex":0},
+
+  {"state":"Roraima","question":"Capital de Roraima?","options":["Boa Vista","Belém","Macapá","Manaus"],"answerIndex":0},
+  {"state":"Roraima","question":"Monte famoso:","options":["Roraima","Everest","Fitz Roy","Aconcágua"],"answerIndex":0},
+  {"state":"Roraima","question":"Região de Roraima:","options":["Norte","Centro-Oeste","Sudeste","Sul"],"answerIndex":0},
+
+  {"state":"Santa Catarina","question":"Capital de SC?","options":["Florianópolis","Joinville","Blumenau","Criciúma"],"answerIndex":0},
+  {"state":"Santa Catarina","question":"Festa famosa:","options":["Oktoberfest","Carnaval","Círio","Bumba Meu Boi"],"answerIndex":0},
+  {"state":"Santa Catarina","question":"Região de SC:","options":["Sul","Sudeste","Norte","Centro-Oeste"],"answerIndex":0},
+
+  {"state":"São Paulo","question":"Capital de SP?","options":["São Paulo","Campinas","Santos","Sorocaba"],"answerIndex":0},
+  {"state":"São Paulo","question":"Ponto turístico famoso:","options":["Avenida Paulista","Pelourinho","Cristo Redentor","Elevador Lacerda"],"answerIndex":0},
+  {"state":"São Paulo","question":"Região de SP:","options":["Sudeste","Sul","Norte","Centro-Oeste"],"answerIndex":0},
+
+  {"state":"Sergipe","question":"Capital de Sergipe?","options":["Aracaju","Maceió","João Pessoa","Natal"],"answerIndex":0},
+  {"state":"Sergipe","question":"Menor ou maior estado do Brasil?","options":["Menor","Maior","Segundo maior","Médio"],"answerIndex":0},
+  {"state":"Sergipe","question":"Região de Sergipe:","options":["Nordeste","Norte","Sul","Sudeste"],"answerIndex":0},
+
+  {"state":"Tocantins","question":"Capital de Tocantins?","options":["Palmas","Araguaína","Gurupi","Paraíso do Tocantins"],"answerIndex":0},
+  {"state":"Tocantins","question":"Paisagem famosa:","options":["Jalapão","Lençóis Maranhenses","Bonito","Chapada do Veadeiro"],"answerIndex":0},
+  {"state":"Tocantins","question":"Região de Tocantins:","options":["Norte","Nordeste","Sul","Sudeste"],"answerIndex":0}
+]

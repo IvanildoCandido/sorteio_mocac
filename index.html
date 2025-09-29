@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteio - Roleta dos Estados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="app-header">
+      <h1>XVII MOCAC Colégio Autêntico</h1>
+    </header>
+
+    <main class="board">
+      <section class="wheel-card">
+        <div class="wheel-wrapper">
+          <div class="pointer top" aria-hidden="true"></div>
+          <canvas id="wheel" width="560" height="560" aria-label="Roleta dos estados" role="img"></canvas>
+        </div>
+        <div class="controls">
+          <button id="spinBtn" class="btn primary">Girar roleta</button>
+          <button id="resetBtn" class="btn ghost" title="Reiniciar sessão">Reiniciar</button>
+        </div>
+        <p class="helper-text">Visite todos os projetos, teste seus conhecimentos e concorra a brindes!</p>
+      </section>
+
+      <section class="quiz-card" id="quizCard" hidden>
+        <div id="stateBadge" class="state-badge"></div>
+        <div class="timer" id="timer" hidden>
+          <div class="timer-bar" id="timerBar"></div>
+          <span id="timerText">20</span>
+        </div>
+        <h2 id="questionText">Pergunta</h2>
+        <div id="options" class="options"></div>
+        <div class="fx-layer" id="fxLayer" aria-hidden="true"></div>
+        <div class="feedback" id="feedback" aria-live="polite"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js" defer></script>
+  <audio id="bgMusic" loop>
+    <source src="./sound.mp3" type="audio/mpeg">
+  </audio>
+  <div id="rewardsModal" class="rewards-modal" hidden>
+    <div class="rewards-content">
+      <h2>Escolha um número</h2>
+      <div class="rewards-grid">
+        <button class="reward-card" data-index="0">
+          <img src="./logo.png" alt="Logo" class="card-logo">
+          <span class="card-number">1</span>
+        </button>
+        <button class="reward-card" data-index="1">
+          <img src="./logo.png" alt="Logo" class="card-logo">
+          <span class="card-number">2</span>
+        </button>
+        <button class="reward-card" data-index="2">
+          <img src="./logo.png" alt="Logo" class="card-logo">
+          <span class="card-number">3</span>
+        </button>
+        <button class="reward-card" data-index="3">
+          <img src="./logo.png" alt="Logo" class="card-logo">
+          <span class="card-number">4</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Botão de mute/unmute -->
+  <button id="muteBtn" class="mute-btn" title="Ativar/Desativar som">
+    <span class="mute-icon">🔊</span>
+  </button>
+</body>
+</html>
