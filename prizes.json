@@ -1,7 +1,6 @@
 [
-  { "name": "Balinha", "weight": 60 },
-  { "name": "Caneta",  "weight": 25 },
-  { "name": "Bolsa",   "weight": 10 },
-  { "name": "Boné",    "weight": 5 },
-  { "name": "Chaveiro",    "weight": 25 }
+  { "name": "Balinha", "weight": 75 },
+  { "name": "Caneta",  "weight": 15 },
+  { "name": "Bolsa",   "weight": 7 },
+  { "name": "Boné",    "weight": 3 }
 ]
