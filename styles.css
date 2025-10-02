@@ -36,8 +36,8 @@ body{
 .btn:disabled{opacity:.6;cursor:not-allowed}
 .btn.primary{background:linear-gradient(180deg,#7ca3ff,#5b8cff);color:white}
 .btn.ghost{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,.12)}
-.quiz-card h2{margin:8px 0 12px;font-size:36px;line-height:1.2}
-@media (min-width:1200px){.quiz-card h2{font-size:44px}}
+.quiz-card h2{margin:8px 0 12px;font-size:28px;line-height:1.2}
+@media (min-width:1200px){.quiz-card h2{font-size:32px}}
 .state-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
 .options{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px}
 @media (max-width:600px){.options{grid-template-columns:1fr}}
@@ -62,8 +62,8 @@ body{
 .quiz-full .wheel-card{display:none}
 .quiz-full .quiz-card{grid-column:1/-1;min-height:75vh;display:flex;flex-direction:column;justify-content:center}
 .quiz-full .quiz-card .options{grid-template-columns:1fr 1fr}
-.quiz-full .quiz-card h2{font-size:48px}
-@media (min-width:1200px){.quiz-full .quiz-card h2{font-size:56px}}
+.quiz-full .quiz-card h2{font-size:36px}
+@media (min-width:1200px){.quiz-full .quiz-card h2{font-size:40px}}
 .actions{margin-top:10px;display:flex;justify-content:flex-end}
 .app-footer{display:none}
 
