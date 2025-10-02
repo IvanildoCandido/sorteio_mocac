@@ -1,6 +1,6 @@
 // Estados conforme perguntas disponíveis no questions.json
 const STATES = [
-  "Amazonas","Ceará","Goiás","Maranhão","Mato Grosso do Sul","Minas Gerais","Paraná","Paraíba","Pará","Pernambuco","Piauí","Rio Grande do Sul","Rio de Janeiro"
+  "Ceará","Rio de Janeiro","Goiás","Amazonas","Maranhão","Mato Grosso do Sul","Minas Gerais","Paraná","Paraíba","Pará","Pernambuco","Piauí","Rio Grande do Sul"
 ];
 
 const wheelCanvas = document.getElementById('wheel');
@@ -39,13 +39,13 @@ function loadScore(){
 function saveScore(){ localStorage.setItem('sorteio_score', JSON.stringify(score)); }
 function updateScoreUI(){ /* UI de score removida */ }
 
-// Paleta inspirada na foto de referência (ordem segue STATES)
-const SEGMENT_COLORS = ['#74b72e','#f1d43b','#4a90e2','#74c7c7','#a38bd4','#f87aa0','#f2a65a','#74b72e','#6a86e8','#9b7ad9','#f16b7b','#f2a65a','#78c14b','#8ad9f0','#ef6b6b'];
+// Paleta com cores contrastantes (ordem segue STATES)
+const SEGMENT_COLORS = ['#f1d43b','#e74c3c','#4a90e2','#2ecc71','#9b59b6','#f39c12','#e67e22','#1abc9c','#34495e','#8e44ad','#f1c40f','#e74c3c','#27ae60'];
 function segmentColors(i){ return SEGMENT_COLORS[i % SEGMENT_COLORS.length]; }
 
 // Siglas (UF) para exibir nas fatias
 const UF = {
-  'Amazonas':'AM','Ceará':'CE','Goiás':'GO','Maranhão':'MA','Mato Grosso do Sul':'MS','Minas Gerais':'MG','Paraná':'PR','Paraíba':'PB','Pará':'PA','Pernambuco':'PE','Piauí':'PI','Rio Grande do Sul':'RS','Rio de Janeiro':'RJ'
+  'Ceará':'CE','Rio de Janeiro':'RJ','Goiás':'GO','Amazonas':'AM','Maranhão':'MA','Mato Grosso do Sul':'MS','Minas Gerais':'MG','Paraná':'PR','Paraíba':'PB','Pará':'PA','Pernambuco':'PE','Piauí':'PI','Rio Grande do Sul':'RS'
 };
 
 function drawWheel(){
