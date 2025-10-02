@@ -1,12 +1,11 @@
 // Estados conforme perguntas disponíveis no questions.json
 const STATES = [
-  "Ceará","Rio de Janeiro","Goiás","Amazonas","Maranhão","Mato Grosso do Sul","Minas Gerais","Paraná","Paraíba","Pará","Pernambuco","Piauí","Rio Grande do Sul"
+  "Ceará","Rio de Janeiro","Goiás","Amazonas","Maranhão","Mato Grosso do Sul","Minas Gerais","Paraná","Paraíba","Pará","Pernambuco","Piauí","Rio Grande do Sul","São Paulo"
 ];
 
 const wheelCanvas = document.getElementById('wheel');
 const ctx = wheelCanvas.getContext('2d');
 const spinBtn = document.getElementById('spinBtn');
-const resetBtn = document.getElementById('resetBtn');
 const quizCard = document.getElementById('quizCard');
 const questionText = document.getElementById('questionText');
 const optionsContainer = document.getElementById('options');
@@ -40,12 +39,12 @@ function saveScore(){ localStorage.setItem('sorteio_score', JSON.stringify(score
 function updateScoreUI(){ /* UI de score removida */ }
 
 // Paleta com cores contrastantes (ordem segue STATES)
-const SEGMENT_COLORS = ['#f1d43b','#e74c3c','#4a90e2','#2ecc71','#9b59b6','#f39c12','#e67e22','#1abc9c','#34495e','#8e44ad','#f1c40f','#e74c3c','#27ae60'];
+const SEGMENT_COLORS = ['#f1d43b','#e74c3c','#4a90e2','#2ecc71','#9b59b6','#f39c12','#e67e22','#1abc9c','#34495e','#8e44ad','#f1c40f','#e74c3c','#27ae60','#3498db'];
 function segmentColors(i){ return SEGMENT_COLORS[i % SEGMENT_COLORS.length]; }
 
 // Siglas (UF) para exibir nas fatias
 const UF = {
-  'Ceará':'CE','Rio de Janeiro':'RJ','Goiás':'GO','Amazonas':'AM','Maranhão':'MA','Mato Grosso do Sul':'MS','Minas Gerais':'MG','Paraná':'PR','Paraíba':'PB','Pará':'PA','Pernambuco':'PE','Piauí':'PI','Rio Grande do Sul':'RS'
+  'Ceará':'CE','Rio de Janeiro':'RJ','Goiás':'GO','Amazonas':'AM','Maranhão':'MA','Mato Grosso do Sul':'MS','Minas Gerais':'MG','Paraná':'PR','Paraíba':'PB','Pará':'PA','Pernambuco':'PE','Piauí':'PI','Rio Grande do Sul':'RS','São Paulo':'SP'
 };
 
 function drawWheel(){
@@ -79,7 +78,7 @@ function drawWheel(){
     const end = start + segAngle;
     const mid = (start+end)/2;
     const marginAngle = 0.06; // margem para não encostar nas divisões
-    const innerR = radius*0.36;
+    const innerR = radius*0.50;
     const outerR = radius*0.90;
 
     ctx.save();
@@ -445,7 +444,6 @@ function showSad(){
 // Init
 window.addEventListener('resize', resizeCanvas);
 spinBtn.addEventListener('click', spin);
-resetBtn.addEventListener('click', reset);
 
 loadScore();
 resizeCanvas();

@@ -547,7 +547,7 @@
       "Os tropeiros",
       "Ariano Suassuna"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
     "state": "Paraíba",
@@ -570,5 +570,38 @@
       "Eliane"
     ],
     "answerIndex": 1
+  },
+  {
+    "state": "São Paulo",
+    "question": "Qual das cidades abaixo é conhecida como Terra da garoa?",
+    "options": [
+      "Rio de Janeiro",
+      "Gramado",
+      "São Paulo",
+      "Garanhuns"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "state": "São Paulo",
+    "question": "Qual o estado mais populoso do Brasil?",
+    "options": [
+      "Amazonas",
+      "São Paulo",
+      "Rio de Janeiro",
+      "Paraná"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "state": "São Paulo",
+    "question": "Rita Lee, Charlie Brown Jr e Maria Rita são cantores conhecidos nacionalmente. Todos eles nasceram no estado de:",
+    "options": [
+      "São Paulo",
+      "Rio de Janeiro",
+      "Espírito Santo",
+      "Bahia"
+    ],
+    "answerIndex": 0
   }
 ]
