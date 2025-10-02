@@ -1,6 +1,6 @@
-// Estados conforme referência da imagem
+// Estados conforme perguntas disponíveis no questions.json
 const STATES = [
-  "Pernambuco","Amazonas","Bahia","Rio Grande do Sul","Maranhão","Ceará","Pará","Rio de Janeiro","Minas Gerais","Goiás","Piauí","Paraná","Mato Grosso do Sul","Paraíba","São Paulo"
+  "Amazonas","Ceará","Goiás","Maranhão","Mato Grosso do Sul","Minas Gerais","Paraná","Paraíba","Pará","Pernambuco","Piauí","Rio Grande do Sul","Rio de Janeiro"
 ];
 
 const wheelCanvas = document.getElementById('wheel');
@@ -45,7 +45,7 @@ function segmentColors(i){ return SEGMENT_COLORS[i % SEGMENT_COLORS.length]; }
 
 // Siglas (UF) para exibir nas fatias
 const UF = {
-  'Pernambuco':'PE','Amazonas':'AM','Bahia':'BA','Rio Grande do Sul':'RS','Maranhão':'MA','Ceará':'CE','Pará':'PA','Rio de Janeiro':'RJ','Minas Gerais':'MG','Goiás':'GO','Piauí':'PI','Paraná':'PR','Mato Grosso do Sul':'MS','Paraíba':'PB','São Paulo':'SP'
+  'Amazonas':'AM','Ceará':'CE','Goiás':'GO','Maranhão':'MA','Mato Grosso do Sul':'MS','Minas Gerais':'MG','Paraná':'PR','Paraíba':'PB','Pará':'PA','Pernambuco':'PE','Piauí':'PI','Rio Grande do Sul':'RS','Rio de Janeiro':'RJ'
 };
 
 function drawWheel(){
