@@ -268,6 +268,9 @@ function showRewards(){
     btn.classList.remove('revealed');
     btn.disabled = false;
     btn.style.opacity = 1; // resetar opacidade
+    btn.style.filter = 'none'; // resetar filtro
+    btn.style.transform = 'none'; // resetar transformação
+    btn.style.boxShadow = 'none'; // resetar sombra
     btn.onclick = ()=>{
       if(chosen) return;
       chosen = true;
