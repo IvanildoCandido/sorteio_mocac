@@ -250,6 +250,13 @@ function weightedPick(items){
 function showRewards(){
   rewardsModal.hidden = false;
   const cards = rewardsModal.querySelectorAll('.reward-card');
+  
+  // Sortear o prêmio real primeiro
+  const realPrize = weightedPick(prizes);
+  
+  // Criar prêmios falsos (diferentes do real)
+  const fakePrizes = prizes.filter(p => p.name !== realPrize.name);
+  
   // resetar cards para mostrar logo e número
   let chosen = false;
   cards.forEach((btn,i)=>{
@@ -264,12 +271,29 @@ function showRewards(){
     btn.onclick = ()=>{
       if(chosen) return;
       chosen = true;
-      // desativa todos os outros imediatamente
-      cards.forEach(b=>{ if(b!==btn){ b.disabled = true; b.style.opacity = 0.5; } });
-      const prize = weightedPick(prizes);
+      
+      // Mostrar prêmio real no card escolhido
       logo.style.display = 'none';
-      number.textContent = `🎁 ${prize.name}`;
+      number.textContent = `🎁 ${realPrize.name}`;
       btn.classList.add('revealed');
+      
+      // Mostrar prêmios falsos nos outros cards (ilusão visual)
+      cards.forEach((otherBtn, otherIndex) => {
+        if(otherBtn !== btn) {
+          otherBtn.disabled = true;
+          otherBtn.style.opacity = 0.5;
+          
+          // Escolher um prêmio falso aleatório
+          const fakePrize = fakePrizes[Math.floor(Math.random() * fakePrizes.length)];
+          const otherLogo = otherBtn.querySelector('.card-logo');
+          const otherNumber = otherBtn.querySelector('.card-number');
+          
+          otherLogo.style.display = 'none';
+          otherNumber.textContent = `🎁 ${fakePrize.name}`;
+          otherBtn.classList.add('revealed');
+        }
+      });
+      
       // fechar após escolha
       setTimeout(()=>{ rewardsModal.hidden = true; }, 2000);
     };
