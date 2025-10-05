@@ -277,11 +277,18 @@ function showRewards(){
       number.textContent = `🎁 ${realPrize.name}`;
       btn.classList.add('revealed');
       
+      // Destacar o card escolhido (prêmio real)
+      btn.style.opacity = 1;
+      btn.style.filter = 'none';
+      btn.style.transform = 'scale(1.05)';
+      btn.style.boxShadow = '0 8px 25px rgba(0,0,0,0.3)';
+      
       // Mostrar prêmios falsos nos outros cards (ilusão visual)
       cards.forEach((otherBtn, otherIndex) => {
         if(otherBtn !== btn) {
           otherBtn.disabled = true;
-          otherBtn.style.opacity = 0.5;
+          otherBtn.style.opacity = 0.3; // Mais emagrecido
+          otherBtn.style.filter = 'grayscale(100%)'; // Preto e branco
           
           // Escolher um prêmio falso aleatório
           const fakePrize = fakePrizes[Math.floor(Math.random() * fakePrizes.length)];
