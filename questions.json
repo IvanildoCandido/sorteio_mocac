@@ -1483,5 +1483,599 @@
       "Salinização"
     ],
     "answerIndex": 1
+  },
+  {
+    "theme": "Personalidades",
+    "question": "Qual filósofa francesa escreveu 'O Segundo Sexo', obra fundamental para o feminismo?",
+    "options": [
+      "Hannah Arendt",
+      "Simone de Beauvoir",
+      "Virginia Woolf",
+      "Judith Butler"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Personalidades",
+    "question": "Quem foi o líder indígena brasileiro que defendeu a demarcação de terras e foi assassinado em 1988?",
+    "options": [
+      "Raoni Metuktire",
+      "Mário Juruna",
+      "Chico Mendes",
+      "Ailton Krenak"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Personalidades",
+    "question": "Qual matemático britânico decifrou o código Enigma durante a Segunda Guerra Mundial?",
+    "options": [
+      "John von Neumann",
+      "Kurt Gödel",
+      "Alan Turing",
+      "Bertrand Russell"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Personalidades",
+    "question": "Quem foi a primeira mulher a receber o Prêmio Pulitzer de Fotografia?",
+    "options": [
+      "Dorothea Lange",
+      "Annie Leibovitz",
+      "Diane Arbus",
+      "Margaret Bourke-White"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "theme": "Personalidades",
+    "question": "Qual pintor espanhol criou a obra 'Guernica', retratando os horrores da guerra?",
+    "options": [
+      "Salvador Dalí",
+      "Pablo Picasso",
+      "Joan Miró",
+      "Diego Velázquez"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Música",
+    "question": "Qual compositora brasileira compôs a trilha sonora do filme 'O Pagador de Promessas'?",
+    "options": [
+      "Chiquinha Gonzaga",
+      "Maysa",
+      "Dolores Duran",
+      "Dorival Caymmi"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "theme": "Música",
+    "question": "Qual banda britânica lançou o álbum conceitual 'The Wall' em 1979?",
+    "options": [
+      "Led Zeppelin",
+      "Pink Floyd",
+      "Queen",
+      "The Who"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Música",
+    "question": "Quem é conhecido como o 'Rei do Pop' e revolucionou os videoclipes musicais?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Freddie Mercury",
+      "David Bowie"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Música",
+    "question": "Qual instrumento de teclas é considerado o precursor do piano moderno?",
+    "options": [
+      "Órgão",
+      "Cravo",
+      "Clavicórdio",
+      "Acordeão"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Música",
+    "question": "Qual cantora norte-americana é conhecida como a 'Rainha do Soul'?",
+    "options": [
+      "Diana Ross",
+      "Aretha Franklin",
+      "Tina Turner",
+      "Whitney Houston"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Cinema",
+    "question": "Qual diretor japonês é conhecido pelos filmes 'Rashomon' e 'Os Sete Samurais'?",
+    "options": [
+      "Yasujirō Ozu",
+      "Akira Kurosawa",
+      "Hayao Miyazaki",
+      "Takeshi Kitano"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Cinema",
+    "question": "Qual filme ganhou o Oscar de Melhor Filme em 2020 e foi o primeiro não-anglófono a conquistar a categoria?",
+    "options": [
+      "Roma",
+      "Parasita",
+      "Cinema Paradiso",
+      "A Vida É Bela"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Cinema",
+    "question": "Quem dirigiu a trilogia 'O Senhor dos Anéis'?",
+    "options": [
+      "Steven Spielberg",
+      "Peter Jackson",
+      "James Cameron",
+      "George Lucas"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Cinema",
+    "question": "Qual atriz brasileira ganhou o prêmio de Melhor Atriz no Festival de Cannes por 'Amor'?",
+    "options": [
+      "Sônia Braga",
+      "Fernanda Montenegro",
+      "Fernanda Torres",
+      "Regina Casé"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Cinema",
+    "question": "Qual filme de Stanley Kubrick se passa em um hotel assombrado nas montanhas?",
+    "options": [
+      "Laranja Mecânica",
+      "O Iluminado",
+      "2001: Uma Odisseia no Espaço",
+      "De Olhos Bem Fechados"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Viagens",
+    "question": "Qual é a capital da Islândia, conhecida por suas águas termais?",
+    "options": [
+      "Oslo",
+      "Reykjavik",
+      "Helsinki",
+      "Copenhagen"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Viagens",
+    "question": "Em qual país africano está localizada a cidade de Marrakech?",
+    "options": [
+      "Egito",
+      "Marrocos",
+      "Tunísia",
+      "Argélia"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Viagens",
+    "question": "Qual é o deserto mais antigo do mundo, localizado na Namíbia?",
+    "options": [
+      "Atacama",
+      "Namibe",
+      "Kalahari",
+      "Gobi"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Viagens",
+    "question": "Qual cidade italiana é conhecida por seus canais e gôndolas?",
+    "options": [
+      "Roma",
+      "Veneza",
+      "Florença",
+      "Milão"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Viagens",
+    "question": "Qual é o nome da famosa trilha inca que leva a Machu Picchu?",
+    "options": [
+      "Trilha dos Incas",
+      "Caminho Inca",
+      "Trilha Salkantay",
+      "Rota Sagrada"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Esporte",
+    "question": "Qual nadador norte-americano ganhou 23 medalhas de ouro olímpicas?",
+    "options": [
+      "Mark Spitz",
+      "Michael Phelps",
+      "Ryan Lochte",
+      "Ian Thorpe"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Esporte",
+    "question": "Em qual ano Ayrton Senna venceu seu primeiro campeonato mundial de Fórmula 1?",
+    "options": [
+      "1987",
+      "1988",
+      "1989",
+      "1990"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Esporte",
+    "question": "Qual tenista suíço detém o recorde de mais títulos de Grand Slam masculino até 2023?",
+    "options": [
+      "Rafael Nadal",
+      "Novak Djokovic",
+      "Roger Federer",
+      "Pete Sampras"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Esporte",
+    "question": "Qual país sediou a primeira Copa do Mundo de Futebol em 1930?",
+    "options": [
+      "Brasil",
+      "Uruguai",
+      "Argentina",
+      "Itália"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Esporte",
+    "question": "Qual atleta jamaicano é o recordista mundial dos 100 metros rasos?",
+    "options": [
+      "Yohan Blake",
+      "Usain Bolt",
+      "Asafa Powell",
+      "Carl Lewis"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Novela",
+    "question": "Qual novela brasileira retratou a história da escravidão no Brasil com Preta Gil no elenco?",
+    "options": [
+      "Escrava Isaura",
+      "Sinhá Moça",
+      "Lado a Lado",
+      "Tempo de Amar"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Novela",
+    "question": "Qual autor brasileiro escreveu 'Rei do Gado', novela de grande sucesso?",
+    "options": [
+      "Benedito Ruy Barbosa",
+      "Dias Gomes",
+      "Gilberto Braga",
+      "Manoel Carlos"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "theme": "Novela",
+    "question": "Em qual novela Jade e Lucas viveram um romance impossível?",
+    "options": [
+      "Caminho das Índias",
+      "O Clone",
+      "Terra Nostra",
+      "América"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Novela",
+    "question": "Qual novela de Glória Perez abordou o tráfico de mulheres?",
+    "options": [
+      "O Clone",
+      "Salve Jorge",
+      "Caminho das Índias",
+      "América"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Novela",
+    "question": "Qual ator interpretou o Jô Soares na novela 'Selva de Pedra'?",
+    "options": [
+      "Francisco Cuoco",
+      "Tony Ramos",
+      "Lima Duarte",
+      "Raul Cortez"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual anime japonês conta a história de um garoto que quer se tornar o Rei dos Piratas?",
+    "options": [
+      "Naruto",
+      "One Piece",
+      "Bleach",
+      "Dragon Ball"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual é o nome do robô gigante pilotado por Shinji Ikari no anime 'Neon Genesis Evangelion'?",
+    "options": [
+      "EVA-00",
+      "EVA-01",
+      "EVA-02",
+      "EVA-03"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual estúdio de animação japonês produziu 'A Viagem de Chihiro' e 'Meu Amigo Totoro'?",
+    "options": [
+      "Toei Animation",
+      "Studio Ghibli",
+      "Madhouse",
+      "Bones"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual é o nome do alter ego do Batman?",
+    "options": [
+      "Clark Kent",
+      "Bruce Wayne",
+      "Tony Stark",
+      "Peter Parker"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Desenho",
+    "question": "Em 'Avatar: A Lenda de Aang', qual elemento Aang domina por último?",
+    "options": [
+      "Água",
+      "Fogo",
+      "Terra",
+      "Ar"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "Qual linguagem de programação foi criada por Guido van Rossum e tem um nome de serpente?",
+    "options": [
+      "Java",
+      "Python",
+      "Ruby",
+      "Perl"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "Qual empresa desenvolveu o sistema operacional Android?",
+    "options": [
+      "Apple",
+      "Google",
+      "Microsoft",
+      "Samsung"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "Qual é o protocolo padrão usado para transferência de páginas web?",
+    "options": [
+      "FTP",
+      "HTTP",
+      "SMTP",
+      "SSH"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "Qual cientista da computação é considerado o pai da inteligência artificial?",
+    "options": [
+      "Alan Turing",
+      "John McCarthy",
+      "Marvin Minsky",
+      "Claude Shannon"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "Qual tecnologia permite a transmissão de dados sem fio em curta distância?",
+    "options": [
+      "Wi-Fi",
+      "Bluetooth",
+      "NFC",
+      "Zigbee"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Meio Ambiente",
+    "question": "Qual é o maior bioma do Brasil em extensão territorial?",
+    "options": [
+      "Amazônia",
+      "Cerrado",
+      "Mata Atlântica",
+      "Caatinga"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "theme": "Meio Ambiente",
+    "question": "Qual gás é responsável pelo efeito estufa e o aquecimento global?",
+    "options": [
+      "Oxigênio",
+      "Dióxido de Carbono",
+      "Nitrogênio",
+      "Hélio"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Meio Ambiente",
+    "question": "Qual é o nome do acordo internacional sobre mudanças climáticas assinado em 2015?",
+    "options": [
+      "Protocolo de Kyoto",
+      "Acordo de Paris",
+      "Convenção de Estocolmo",
+      "Rio 92"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Meio Ambiente",
+    "question": "Qual animal é símbolo da conservação ambiental e está ameaçado de extinção?",
+    "options": [
+      "Leão",
+      "Panda Gigante",
+      "Tigre",
+      "Elefante"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Meio Ambiente",
+    "question": "Qual oceano é o mais poluído por plástico no mundo?",
+    "options": [
+      "Atlântico",
+      "Pacífico",
+      "Índico",
+      "Ártico"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Autêntico",
+    "question": "Qual ano foi fundado o Colégio Autêntico?",
+    "options": [
+      "1994",
+      "1995",
+      "1996",
+      "1997"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Autêntico",
+    "question": "Qual ano Andrade e Lourdinha assumiram a escola?",
+    "options": [
+      "1996",
+      "1997",
+      "1998",
+      "1999"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Autêntico",
+    "question": "Em qual ano foi inaugurada a Unidade Patos?",
+    "options": [
+      "2016",
+      "2017",
+      "2018",
+      "2019"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Autêntico",
+    "question": "Em qual ano foi inaugurada a Start Alto Branco?",
+    "options": [
+      "2013",
+      "2014",
+      "2015",
+      "2016"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Autêntico",
+    "question": "Em qual ano foi inaugurada a unidade Autêntico Alto Branco?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Autêntico",
+    "question": "Em qual ano foi implantado o Ensino Médio?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Autêntico",
+    "question": "Em qual ano foi inaugurada a unidade Conceição?",
+    "options": [
+      "2011",
+      "2012",
+      "2013",
+      "2014"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Autêntico",
+    "question": "Quantos colaboradores tem no Colégio Autêntico de Campina Grande?",
+    "options": [
+      "120",
+      "130",
+      "146",
+      "160"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Autêntico",
+    "question": "Qual é o nome do mascote do Colégio Autêntico?",
+    "options": [
+      "Bruno",
+      "Bernardo",
+      "Romeu",
+      "Braulio"
+    ],
+    "answerIndex": 2
   }
 ]

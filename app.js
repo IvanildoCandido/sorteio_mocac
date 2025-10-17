@@ -8,7 +8,8 @@ const THEMES = [
   "Novela",
   "Desenho",
   "Tecnologia",
-  "Meio Ambiente"
+  "Meio Ambiente",
+  "Autêntico"
 ];
 
 const wheelCanvas = document.getElementById('wheel');
@@ -95,7 +96,8 @@ const SEGMENT_COLORS = [
   '#f39c12', // Amarelo alaranjado - Novela
   '#1abc9c', // Turquesa - Desenho
   '#4a90e2', // Azul claro - Tecnologia
-  '#27ae60'  // Verde escuro - Meio Ambiente
+  '#27ae60', // Verde escuro - Meio Ambiente
+  '#FFD700'  // Dourado - Autêntico
 ];
 
 function segmentColors(i){ 
@@ -497,6 +499,52 @@ function showSad(){
 // Init
 window.addEventListener('resize', resizeCanvas);
 spinBtn.addEventListener('click', spin);
+
+// Trapaça: Double click no canvas para testar temas
+wheelCanvas.addEventListener('dblclick', (e)=>{
+  if(spinning) return; // Não permitir durante o giro
+  
+  const rect = wheelCanvas.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  
+  // Centro do canvas
+  const cx = wheelCanvas.width / 2;
+  const cy = wheelCanvas.height / 2;
+  
+  // Calcular ângulo do clique em relação ao centro
+  const dx = x - cx;
+  const dy = y - cy;
+  let clickAngle = Math.atan2(dy, dx);
+  
+  // Subtrair a rotação atual da roda para compensar
+  clickAngle = clickAngle - angle;
+  
+  // Normalizar ângulo para 0-2π
+  while(clickAngle < 0) clickAngle += 2 * Math.PI;
+  clickAngle = clickAngle % (2 * Math.PI);
+  
+  // Calcular qual segmento foi clicado
+  const arc = (2*Math.PI) / THEMES.length;
+  const segmentIndex = Math.floor(clickAngle / arc);
+  const clickedTheme = THEMES[segmentIndex];
+  
+  // Feedback visual rápido
+  console.log(`🎯 Trapaça ativada! Tema: ${clickedTheme}`);
+  
+  // Mostrar loading screen
+  loadingScreen.hidden = false;
+  
+  // Após 1s de loading, mostrar pergunta
+  setTimeout(()=>{
+    loadingScreen.hidden = true;
+    const appEl = document.getElementById('app');
+    appEl.classList.add('quiz-full');
+    document.querySelector('.board')?.classList.remove('two');
+    currentTheme = clickedTheme;
+    loadQuestionForTheme(currentTheme);
+  }, 1000);
+});
 
 loadScore();
 loadAskedQuestions();
