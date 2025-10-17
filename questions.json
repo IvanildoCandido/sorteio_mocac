@@ -1,607 +1,1487 @@
 [
   {
-    "state": "Ceará",
-    "question": "Quais manifestações artísticas fazem parte da cultura cearense?",
+    "theme": "Personalidades",
+    "question": "Qual líder sul-africano lutou contra o apartheid e passou 27 anos na prisão antes de se tornar presidente?",
     "options": [
-      "Escultura e pintura moderna",
-      "Xilogravura, cordel, repente e bordados à mão",
-      "Samba e carnaval",
-      "Teatro e cinema"
+      "Mahatma Gandhi",
+      "Nelson Mandela",
+      "Martin Luther King Jr.",
+      "Malcolm X"
     ],
     "answerIndex": 1
   },
   {
-    "state": "Ceará",
-    "question": "Quais artes são importantes para a cultura e o sustento das artesãs no Ceará?",
+    "theme": "Personalidades",
+    "question": "Qual cientista desenvolveu a teoria da relatividade e é conhecido pela equação E=mc²?",
     "options": [
-      "O forró e o xaxado",
-      "A xilogravura e o repente",
-      "A renda de bilro, o labirinto e o Richelieu",
-      "A música e o teatro"
+      "Isaac Newton",
+      "Nikola Tesla",
+      "Albert Einstein",
+      "Stephen Hawking"
     ],
     "answerIndex": 2
   },
   {
-    "state": "Ceará",
-    "question": "Onde o repente surgiu?",
+    "theme": "Personalidades",
+    "question": "Quem foi a primeira mulher a ganhar um Prêmio Nobel e a única pessoa a ganhá-lo em duas áreas científicas diferentes?",
     "options": [
-      "No Sul do Brasil",
-      "No Nordeste, em regiões da Paraíba e Pernambuco",
-      "No Norte do Brasil",
-      "Em São Paulo e Rio de Janeiro"
+      "Marie Curie",
+      "Rosalind Franklin",
+      "Ada Lovelace",
+      "Jane Goodall"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "theme": "Personalidades",
+    "question": "Qual artista mexicana é conhecida por seus autorretratos e sobrancelhas marcantes?",
+    "options": [
+      "Tarsila do Amaral",
+      "Frida Kahlo",
+      "Georgia O'Keeffe",
+      "Leonora Carrington"
     ],
     "answerIndex": 1
   },
   {
-    "state": "Ceará",
-    "question": "O cordel é uma literatura popular em versos rimados que conta histórias e lendas do Nordeste. Qual cordelista contemporâneo é conhecido por manter viva essa tradição nordestina?",
+    "theme": "Personalidades",
+    "question": "Quem foi o inventor e empresário que fundou a Apple e revolucionou a indústria de tecnologia?",
     "options": [
-      "Patativa do Assaré",
-      "Bráulio Bessa",
-      "Zé Cardoso",
-      "Iponax"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "state": "Ceará",
-    "question": "Quais são os personagens que representam o xaxado?",
-    "options": [
-      "Mulheres rendeiras",
-      "Zé Cardoso",
-      "Maria Bonita e Lampião",
-      "Bráulio Bessa"
+      "Bill Gates",
+      "Mark Zuckerberg",
+      "Steve Jobs",
+      "Elon Musk"
     ],
     "answerIndex": 2
   },
   {
-    "state": "Maranhão",
-    "question": "O Maranhão tem uma vasta diversidade de pratos. Quais são os principais pratos típicos da culinária maranhense?",
+    "theme": "Personalidades",
+    "question": "Qual escritor inglês criou personagens como Sherlock Holmes e Dr. Watson?",
     "options": [
-      "Feijoada, pão de queijo e moqueca capixaba",
-      "Tutu de feijão, baião de dois e churrasco gaúcho",
-      "Arroz de cuxá, torta de camarão e juçara",
-      "Vatapá, acarajé e caruru"
+      "Agatha Christie",
+      "Arthur Conan Doyle",
+      "Edgar Allan Poe",
+      "Charles Dickens"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Personalidades",
+    "question": "Quem foi a primeira mulher a voar sozinha através do Oceano Atlântico?",
+    "options": [
+      "Bessie Coleman",
+      "Amelia Earhart",
+      "Jacqueline Cochran",
+      "Sally Ride"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Personalidades",
+    "question": "Qual ativista paquistanesa lutou pelo direito à educação das meninas e se tornou a pessoa mais jovem a ganhar o Nobel da Paz?",
+    "options": [
+      "Malala Yousafzai",
+      "Rigoberta Menchú",
+      "Aung San Suu Kyi",
+      "Shirin Ebadi"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "theme": "Personalidades",
+    "question": "Quem foi o líder do movimento pelos direitos civis nos EUA conhecido pelo discurso 'I Have a Dream'?",
+    "options": [
+      "Malcolm X",
+      "Rosa Parks",
+      "Martin Luther King Jr.",
+      "Jesse Jackson"
     ],
     "answerIndex": 2
   },
   {
-    "state": "Maranhão",
-    "question": "Qual é a capital do Maranhão e por que ela é considerada Patrimônio Cultural da Humanidade pela UNESCO?",
+    "theme": "Personalidades",
+    "question": "Qual imperador francês conquistou grande parte da Europa no início do século XIX?",
     "options": [
-      "Belém – pela influência indígena e ribeirinha",
-      "Fortaleza – pela forte presença do artesanato",
-      "São Luís – por seu conjunto arquitetônico colonial e azulejos portugueses",
-      "Recife – por seus frevos e maracatus"
+      "Luís XIV",
+      "Carlos Magno",
+      "Napoleão Bonaparte",
+      "Júlio César"
     ],
     "answerIndex": 2
   },
   {
-    "state": "Maranhão",
-    "question": "O que são os Lençóis Maranhenses e por que esse parque é tão famoso no Brasil e no mundo?",
+    "theme": "Música",
+    "question": "Qual banda britânica é considerada uma das mais influentes da história do rock e tinha John Lennon como um de seus membros?",
     "options": [
-      "Uma serra coberta de matas fechadas, famosa pelas trilhas ecológicas",
-      "Uma área de dunas de areia branca com lagoas de água cristalina formadas pela chuva",
-      "Uma região montanhosa com cavernas e pinturas rupestres",
-      "Um arquipélago com ilhas e praias paradisíacas"
+      "The Rolling Stones",
+      "The Beatles",
+      "Pink Floyd",
+      "Led Zeppelin"
     ],
     "answerIndex": 1
   },
   {
-    "state": "Maranhão",
-    "question": "Quais são algumas das principais manifestações culturais do Maranhão, como o Bumba Meu Boi?",
+    "theme": "Música",
+    "question": "Quem é conhecida como a 'Rainha do Pop' e lançou hits como 'Like a Virgin' e 'Material Girl'?",
     "options": [
-      "Samba de roda, frevo e maracatu",
-      "Bumba Meu Boi, tambor de crioula e cacuriá",
-      "Congado, festa do divino e cavalhadas",
-      "Carimbó, marujada e cordel"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "state": "Maranhão",
-    "question": "O Maranhão possui muitos azulejos em suas construções históricas. De onde veio essa influência?",
-    "options": [
-      "Da colonização francesa",
-      "Da colonização portuguesa",
-      "Dos povos indígenas locais",
-      "Da imigração italiana"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "state": "Pará",
-    "question": "O Pará está localizado em qual região do Brasil?",
-    "options": [
-      "Sul",
-      "Sudeste",
-      "Centro-Oeste",
-      "Norte"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "state": "Pará",
-    "question": "Qual importante rio tem sua foz no Pará?",
-    "options": [
-      "São Francisco",
-      "Paraná",
-      "Amazonas",
-      "Tocantins"
+      "Cher",
+      "Whitney Houston",
+      "Madonna",
+      "Cyndi Lauper"
     ],
     "answerIndex": 2
   },
   {
-    "state": "Pará",
-    "question": "O famoso mercado de Belém que vende frutas, comidas típicas e artesanatos se chama:",
+    "theme": "Música",
+    "question": "Qual cantor brasileiro é conhecido como o 'Rei do Baião' e popularizou o forró pelo Brasil?",
     "options": [
-      "Mercado Municipal",
-      "Ver-o-Peso",
-      "Feira da Sé",
-      "Central do Brasil"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "state": "Pará",
-    "question": "Quem é conhecido como 'Mestre do Carimbó', um dos ritmos mais tradicionais do Pará?",
-    "options": [
+      "Dominguinhos",
       "Luiz Gonzaga",
-      "Pinduca",
-      "Gilberto Gil",
-      "Chico Buarque"
+      "Jackson do Pandeiro",
+      "Alceu Valença"
     ],
     "answerIndex": 1
   },
   {
-    "state": "Pará",
-    "question": "Qual é a maior festa religiosa do Pará, que reúne milhares de pessoas em homenagem a Nossa Senhora de Nazaré?",
+    "theme": "Música",
+    "question": "Qual gênero musical nasceu no bairro do Bronx, em Nova York, nos anos 1970?",
     "options": [
-      "Festa do Divino",
-      "Círio de Nazaré",
-      "Romaria da Aparecida",
-      "Procissão da Penha"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "state": "Minas Gerais",
-    "question": "Durante a história de Minas Gerais, o que os garimpeiros estavam procurando nas águas dos rios?",
-    "options": [
-      "Ferro",
-      "Prata",
-      "Ouro",
-      "Carvão"
+      "Jazz",
+      "Blues",
+      "Hip Hop",
+      "Rock"
     ],
     "answerIndex": 2
   },
   {
-    "state": "Minas Gerais",
-    "question": "Qual prato típico mineiro foi citado pela cozinheira como parte importante da cultura de Minas?",
+    "theme": "Música",
+    "question": "Quem compôs a famosa ópera 'A Flauta Mágica' e morreu aos 35 anos?",
     "options": [
-      "Churrasco gaúcho",
-      "Pão de queijo",
-      "Vatapá",
-      "Acarajé"
+      "Ludwig van Beethoven",
+      "Wolfgang Amadeus Mozart",
+      "Johann Sebastian Bach",
+      "Antonio Vivaldi"
     ],
     "answerIndex": 1
   },
   {
-    "state": "Minas Gerais",
-    "question": "Segundo o discurso de Tiradentes, qual era uma das principais razões da revolta dos inconfidentes contra a Coroa portuguesa?",
+    "theme": "Música",
+    "question": "Qual banda de rock lançou o álbum 'The Dark Side of the Moon', um dos mais vendidos da história?",
     "options": [
-      "O aumento do preço do café exportado",
-      "A cobrança de impostos abusivos como a derrama",
-      "A proibição da religião católica",
-      "A chegada de novos colonizadores espanhóis"
+      "Queen",
+      "Pink Floyd",
+      "The Who",
+      "Deep Purple"
     ],
     "answerIndex": 1
   },
   {
-    "state": "Minas Gerais",
-    "question": "A maquinista do Maria Fumaça de Minas Gerais cita cidades importantes. Qual delas é famosa pelas esculturas dos profetas feitas por Aleijadinho?",
+    "theme": "Música",
+    "question": "Quem foi o 'Rei do Rock' e cantou músicas como 'Jailhouse Rock' e 'Can't Help Falling in Love'?",
     "options": [
-      "Diamantina",
-      "Ouro Preto",
-      "Congonhas",
-      "Mariana"
+      "Chuck Berry",
+      "Elvis Presley",
+      "Little Richard",
+      "Jerry Lee Lewis"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Música",
+    "question": "Qual cantora brasileira é conhecida como a 'Eterna Rainha do Mar' e imortalizou músicas como 'Garota de Ipanema'?",
+    "options": [
+      "Elis Regina",
+      "Clara Nunes",
+      "Gal Costa",
+      "Nara Leão"
     ],
     "answerIndex": 2
   },
   {
-    "state": "Minas Gerais",
-    "question": "A fala dos garimpeiros da história de Minas Gerais mostra que a descoberta do ouro trouxe tanto riquezas quanto problemas. Qual foi uma consequência negativa mencionada?",
+    "theme": "Música",
+    "question": "Qual instrumento musical de cordas tem tipicamente seis cordas e é muito usado no rock?",
     "options": [
-      "A chegada de doenças trazidas pelos europeus",
-      "O desinteresse da Coroa portuguesa pela região",
-      "A cobrança de impostos e aumento da vigilância da Coroa",
-      "A falta de compradores para o ouro encontrado"
+      "Baixo",
+      "Violino",
+      "Guitarra",
+      "Banjo"
     ],
     "answerIndex": 2
   },
   {
-    "state": "Rio de Janeiro",
-    "question": "Quem foi o fundador da cidade do Rio de Janeiro, em 1565?",
+    "theme": "Música",
+    "question": "Qual cantor jamaicano é considerado o rei do reggae e cantou 'No Woman, No Cry'?",
     "options": [
-      "Tom Jobim",
-      "Estácio de Sá",
-      "Vinicius de Moraes",
-      "Dom Pedro II"
+      "Peter Tosh",
+      "Bob Marley",
+      "Jimmy Cliff",
+      "Burning Spear"
     ],
     "answerIndex": 1
   },
   {
-    "state": "Rio de Janeiro",
-    "question": "Qual desses pontos turísticos está localizado no Rio de Janeiro e é considerado uma das 7 maravilhas do mundo moderno?",
+    "theme": "Cinema",
+    "question": "Qual filme de 1997, dirigido por James Cameron, se tornou um dos maiores sucessos de bilheteria da história?",
     "options": [
-      "Elevador Lacerda",
-      "Cristo Redentor",
-      "Teatro Amazonas",
-      "Catedral de Brasília"
+      "Avatar",
+      "Titanic",
+      "Gladiador",
+      "Matrix"
     ],
     "answerIndex": 1
   },
   {
-    "state": "Rio de Janeiro",
-    "question": "Qual é o nome do estádio de futebol famoso no Rio de Janeiro, palco de grandes jogos e eventos esportivos?",
+    "theme": "Cinema",
+    "question": "Quem dirigiu a trilogia 'O Senhor dos Anéis'?",
     "options": [
-      "Mineirão",
-      "Beira-Rio",
-      "Maracanã",
-      "Arena Fonte Nova"
+      "Steven Spielberg",
+      "Peter Jackson",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Cinema",
+    "question": "Qual filme brasileiro de 2002 foi indicado ao Oscar de Melhor Filme Estrangeiro?",
+    "options": [
+      "Tropa de Elite",
+      "Central do Brasil",
+      "Cidade de Deus",
+      "O Auto da Compadecida"
     ],
     "answerIndex": 2
   },
   {
-    "state": "Rio de Janeiro",
-    "question": "Qual dessas personalidades foi pioneira ao reger uma orquestra e compôs a primeira marchinha de Carnaval no Brasil?",
+    "theme": "Cinema",
+    "question": "Qual ator interpretou o personagem Jack Sparrow na franquia 'Piratas do Caribe'?",
     "options": [
-      "Carmen Miranda",
-      "Ana Botafogo",
-      "Chiquinha Gonzaga",
-      "Alcione"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "state": "Rio de Janeiro",
-    "question": "Qual dos seguintes times de futebol é famoso no Rio de Janeiro?",
-    "options": [
-      "Palmeiras",
-      "Flamengo",
-      "Grêmio",
-      "Atlético Mineiro"
+      "Orlando Bloom",
+      "Johnny Depp",
+      "Brad Pitt",
+      "Tom Cruise"
     ],
     "answerIndex": 1
   },
   {
-    "state": "Pernambuco",
-    "question": "Qual cantor pernambucano é reconhecido mundialmente pelo forró?",
+    "theme": "Cinema",
+    "question": "Qual filme de terror de 1973, dirigido por William Friedkin, conta a história de uma possessão demoníaca?",
     "options": [
-      "Luiz Gonzaga",
-      "Gilberto Gil",
-      "Chico Buarque",
-      "Caetano Veloso"
+      "O Iluminado",
+      "Psicose",
+      "O Exorcista",
+      "Carrie"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Cinema",
+    "question": "Quem foi o diretor italiano conhecido por filmes como 'Cinema Paradiso' e 'A Lenda do Pianista do Mar'?",
+    "options": [
+      "Federico Fellini",
+      "Giuseppe Tornatore",
+      "Sergio Leone",
+      "Roberto Benigni"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Cinema",
+    "question": "Qual filme de animação da Pixar conta a história de um robô que limpa a Terra após a humanidade abandoná-la?",
+    "options": [
+      "Up - Altas Aventuras",
+      "WALL-E",
+      "Procurando Nemo",
+      "Toy Story"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Cinema",
+    "question": "Qual atriz ganhou o Oscar de Melhor Atriz por seu papel em 'Cisne Negro'?",
+    "options": [
+      "Natalie Portman",
+      "Meryl Streep",
+      "Cate Blanchett",
+      "Jennifer Lawrence"
     ],
     "answerIndex": 0
   },
   {
-    "state": "Pernambuco",
-    "question": "Qual o bloco mais conhecido de Pernambuco?",
+    "theme": "Cinema",
+    "question": "Qual trilogia de ficção científica, lançada nos anos 1980, apresenta Marty McFly e Doc Brown?",
     "options": [
-      "Galo da Madrugada",
-      "Cordão da Bola Preta",
-      "Bafo da Onça",
-      "Monobloco"
+      "Star Wars",
+      "Matrix",
+      "De Volta para o Futuro",
+      "Exterminador do Futuro"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "state": "Pernambuco",
-    "question": "Qual é o doce mais famoso de Pernambuco?",
+    "theme": "Cinema",
+    "question": "Qual filme de Quentin Tarantino ganhou a Palma de Ouro em Cannes e conta histórias entrelaçadas no submundo do crime?",
     "options": [
-      "Bolo de rolo",
-      "Brigadeiro",
-      "Pudim",
-      "Torta de limão"
+      "Kill Bill",
+      "Django Livre",
+      "Pulp Fiction",
+      "Cães de Aluguel"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "state": "Pernambuco",
-    "question": "Qual a capital do estado de Pernambuco?",
+    "theme": "Viagens",
+    "question": "Qual monumento localizado na Índia é considerado uma das Sete Maravilhas do Mundo Moderno?",
     "options": [
+      "Angkor Wat",
+      "Taj Mahal",
+      "Grande Muralha da China",
+      "Petra"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Viagens",
+    "question": "Qual país é conhecido como a 'Terra do Sol Nascente'?",
+    "options": [
+      "China",
+      "Coreia do Sul",
+      "Japão",
+      "Tailândia"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Viagens",
+    "question": "Qual cidade europeia é famosa por seus canais e gôndolas?",
+    "options": [
+      "Amsterdã",
+      "Bruges",
+      "Veneza",
+      "Estocolmo"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Viagens",
+    "question": "Qual é a capital da Austrália?",
+    "options": [
+      "Sydney",
+      "Melbourne",
+      "Canberra",
+      "Brisbane"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Viagens",
+    "question": "Em qual país está localizada a antiga cidade de Machu Picchu?",
+    "options": [
+      "Bolívia",
+      "Peru",
+      "Chile",
+      "Equador"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Viagens",
+    "question": "Qual é a maior ilha do mundo?",
+    "options": [
+      "Madagascar",
+      "Groenlândia",
+      "Nova Guiné",
+      "Bornéu"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Viagens",
+    "question": "Qual cidade brasileira é conhecida como a 'Veneza Brasileira' por seus canais?",
+    "options": [
+      "Santos",
       "Recife",
-      "Olinda",
-      "Caruaru",
-      "Petrolina"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "state": "Rio Grande do Sul",
-    "question": "Qual bebida quente os gaúchos costumam tomar?",
-    "options": [
-      "Chimarrão",
-      "Café",
-      "Chá mate",
-      "Cappuccino"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "state": "Rio Grande do Sul",
-    "question": "Qual cidade do Rio Grande do Sul atrai turistas por conta da neve?",
-    "options": [
-      "Gramado",
       "Porto Alegre",
-      "Caxias do Sul",
-      "Pelotas"
+      "Manaus"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "state": "Rio Grande do Sul",
-    "question": "Em qual região o Rio Grande do Sul fica localizado?",
+    "theme": "Viagens",
+    "question": "Qual país tem o maior número de vulcões ativos do mundo?",
     "options": [
-      "Sul",
-      "Sudeste",
-      "Centro-Oeste",
-      "Norte"
+      "Japão",
+      "Indonésia",
+      "Islândia",
+      "Filipinas"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "state": "Rio Grande do Sul",
-    "question": "Qual escritor gaúcho é reconhecido mundialmente por suas obras?",
+    "theme": "Viagens",
+    "question": "Qual deserto é o maior deserto quente do mundo?",
     "options": [
-      "Mario Quintana",
-      "Machado de Assis",
-      "Castro Alves",
-      "José de Alencar"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "state": "Amazonas",
-    "question": "Qual a capital do Amazonas?",
-    "options": [
-      "Manaus",
-      "Belém",
-      "Boa Vista",
-      "Macapá"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "state": "Amazonas",
-    "question": "Qual é o maior rio que corta o estado do Amazonas?",
-    "options": [
-      "Rio Amazonas",
-      "Rio Negro",
-      "Rio Solimões",
-      "Rio Madeira"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "state": "Amazonas",
-    "question": "Qual é a planta mais especial da Amazônia?",
-    "options": [
-      "Vitória-Régia",
-      "Açaí",
-      "Guaraná",
-      "Cupuaçu"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "state": "Amazonas",
-    "question": "Quais as cores da bandeira do Amazonas?",
-    "options": [
-      "Branco, azul e vermelho",
-      "Verde, amarelo e azul",
-      "Azul, branco e verde",
-      "Vermelho, amarelo e branco"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "state": "Goiás",
-    "question": "Qual famoso parque nacional está localizado em Goiás?",
-    "options": [
-      "Parque Nacional da Serra da Capivara",
-      "Parque Nacional da Tijuca",
-      "Parque Nacional da Chapada dos Veadeiros",
-      "Parque Nacional do Iguaçu"
+      "Deserto do Gobi",
+      "Deserto de Atacama",
+      "Deserto do Saara",
+      "Deserto da Arábia"
     ],
     "answerIndex": 2
   },
   {
-    "state": "Goiás",
-    "question": "Qual cidade goiana é famosa por suas águas termais?",
+    "theme": "Viagens",
+    "question": "Qual monumento francês foi construído para a Exposição Universal de 1889?",
     "options": [
-      "Catalão",
-      "Formosa",
-      "Caldas Novas",
-      "Itumbiara"
+      "Arco do Triunfo",
+      "Torre Eiffel",
+      "Palácio de Versalhes",
+      "Basílica de Sacré-Cœur"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Esporte",
+    "question": "Qual país sediou a Copa do Mundo de Futebol em 2014?",
+    "options": [
+      "África do Sul",
+      "Brasil",
+      "Rússia",
+      "Alemanha"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Esporte",
+    "question": "Quem é considerado o maior nadador olímpico de todos os tempos, com 28 medalhas?",
+    "options": [
+      "Mark Spitz",
+      "Ryan Lochte",
+      "Michael Phelps",
+      "Ian Thorpe"
     ],
     "answerIndex": 2
   },
   {
-    "state": "Goiás",
-    "question": "Em qual parque estadual goiano está localizada a Caverna de Terra Ronca?",
+    "theme": "Esporte",
+    "question": "Qual tenista suíço possui o recorde de mais títulos de Grand Slam na história do tênis masculino (compartilhado)?",
     "options": [
-      "Parque Nacional da Chapada dos Veadeiros",
-      "Parque Estadual de Terra Ronca",
-      "Parque Estadual do Jalapão",
-      "Parque Nacional das Emas"
+      "Pete Sampras",
+      "Roger Federer",
+      "Rafael Nadal",
+      "Andre Agassi"
     ],
     "answerIndex": 1
   },
   {
-    "state": "Piauí",
-    "question": "Qual das comidas típicas abaixo é tradicional do Piauí?",
+    "theme": "Esporte",
+    "question": "Em qual esporte Pelé se tornou uma lenda mundial?",
     "options": [
-      "Tacacá",
-      "Maria Isabel",
-      "Vatapá",
-      "Acarajé"
+      "Basquete",
+      "Vôlei",
+      "Futebol",
+      "Tênis"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Esporte",
+    "question": "Qual país tem o maior número de títulos da Copa do Mundo de Futebol?",
+    "options": [
+      "Alemanha",
+      "Brasil",
+      "Itália",
+      "Argentina"
     ],
     "answerIndex": 1
   },
   {
-    "state": "Piauí",
-    "question": "A embolada, manifestação cultural presente no Nordeste e também no Piauí, caracteriza-se por:",
+    "theme": "Esporte",
+    "question": "Qual atleta jamaicano é conhecido como o homem mais rápido do mundo?",
     "options": [
-      "Ser um estilo de dança com passos rápidos e sapateados.",
-      "Ser uma poesia cantada de improviso, geralmente acompanhada de pandeiro.",
-      "Ser um tipo de música instrumental típica das festas juninas.",
-      "Ser uma narrativa escrita em cordel, sem acompanhamento musical."
+      "Carl Lewis",
+      "Usain Bolt",
+      "Yohan Blake",
+      "Asafa Powell"
     ],
     "answerIndex": 1
   },
   {
-    "state": "Piauí",
-    "question": "O litoral do Piauí é conhecido por:",
+    "theme": "Esporte",
+    "question": "Quantos jogadores compõem um time de vôlei em quadra?",
     "options": [
-      "Ter a maior extensão litorânea do Nordeste.",
-      "Apresentar apenas praias de água doce.",
-      "Ser o único litoral do Nordeste sem dunas.",
-      "Ter cerca de 66 km de extensão, com destaque para o Delta do Parnaíba."
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Esporte",
+    "question": "Qual esporte é praticado no circuito de Wimbledon?",
+    "options": [
+      "Golfe",
+      "Tênis",
+      "Críquete",
+      "Automobilismo"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Esporte",
+    "question": "Qual jogador argentino é conhecido como 'La Pulga' e ganhou múltiplas Bolas de Ouro?",
+    "options": [
+      "Diego Maradona",
+      "Sergio Agüero",
+      "Lionel Messi",
+      "Ángel Di María"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Esporte",
+    "question": "Em qual esporte se usa uma raquete e uma peteca?",
+    "options": [
+      "Squash",
+      "Badminton",
+      "Tênis de mesa",
+      "Frescobol"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Novela",
+    "question": "Qual novela brasileira teve como protagonista uma personagem chamada Nazaré Tedesco, conhecida por sua maldade?",
+    "options": [
+      "A Favorita",
+      "Avenida Brasil",
+      "Senhora do Destino",
+      "Vale Tudo"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Novela",
+    "question": "Qual novela da Globo, exibida em 2012, tinha como cenário principal o subúrbio carioca e a personagem Nina?",
+    "options": [
+      "Cheias de Charme",
+      "Salve Jorge",
+      "Avenida Brasil",
+      "Amor à Vida"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Novela",
+    "question": "Quem foi o autor da novela 'Roque Santeiro', censurada durante a ditadura militar?",
+    "options": [
+      "Gilberto Braga",
+      "Dias Gomes",
+      "Janete Clair",
+      "Manoel Carlos"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Novela",
+    "question": "Qual novela brasileira contou a história de Juma Marruá, uma menina que se transformava em onça?",
+    "options": [
+      "Pantanal",
+      "Renascer",
+      "Irmãos Coragem",
+      "O Rei do Gado"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "theme": "Novela",
+    "question": "Em qual novela a personagem Carminha, interpretada por Adriana Esteves, foi uma das vilãs mais marcantes?",
+    "options": [
+      "Império",
+      "A Regra do Jogo",
+      "Avenida Brasil",
+      "Babilônia"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Novela",
+    "question": "Qual ator interpretou o personagem Zé do Caixão na novela 'Renascer'?",
+    "options": [
+      "Antônio Fagundes",
+      "Osmar Prado",
+      "Humberto Martins",
+      "Reginaldo Faria"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Novela",
+    "question": "Qual novela de Glória Perez abordou o tema do tráfico de pessoas?",
+    "options": [
+      "América",
+      "Caminho das Índias",
+      "Salve Jorge",
+      "O Clone"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Novela",
+    "question": "Quem escreveu a novela 'Vale Tudo', exibida nos anos 1980?",
+    "options": [
+      "Gilberto Braga, Aguinaldo Silva e Leonor Bassères",
+      "Manoel Carlos",
+      "Sílvio de Abreu",
+      "Walcyr Carrasco"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "theme": "Novela",
+    "question": "Qual novela teve como tema central a rivalidade entre duas irmãs gêmeas, Catarina e Ruth?",
+    "options": [
+      "Mulheres Apaixonadas",
+      "Pecado Capital",
+      "A Favorita",
+      "Torre de Babel"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Novela",
+    "question": "Em qual novela o personagem Odete Roitman se tornou icônico como uma vilã sofisticada?",
+    "options": [
+      "Dancin' Days",
+      "Guerra dos Sexos",
+      "Vale Tudo",
+      "Rainha da Sucata"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual desenho animado apresenta as aventuras de um garoto de 10 anos que pode se transformar em diferentes alienígenas?",
+    "options": [
+      "Danny Phantom",
+      "Gerador Rex",
+      "Ben 10",
+      "Os Jovens Titãs"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual é o nome do cachorro detetive que resolve mistérios com seus amigos em uma van chamada 'Máquina de Mistérios'?",
+    "options": [
+      "Pluto",
+      "Scooby-Doo",
+      "Snoopy",
+      "Odie"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual desenho japonês conta a história de um ninja que sonha em se tornar Hokage?",
+    "options": [
+      "Bleach",
+      "One Piece",
+      "Naruto",
+      "Dragon Ball"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual família amarela mora na cidade de Springfield?",
+    "options": [
+      "Os Flintstones",
+      "Os Simpsons",
+      "Os Jetson",
+      "Family Guy"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual desenho da Pixar conta a história de um rato que sonha em ser chef de cozinha?",
+    "options": [
+      "Ratatouille",
+      "Up - Altas Aventuras",
+      "Valente",
+      "Carros"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual é o nome da princesa que tem cabelos mágicos extremamente longos?",
+    "options": [
+      "Ariel",
+      "Rapunzel",
+      "Bela",
+      "Jasmine"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual desenho apresenta quatro tartarugas que foram treinadas em artes marciais por um rato mutante?",
+    "options": [
+      "Street Sharks",
+      "Biker Mice from Mars",
+      "Tartarugas Ninja",
+      "Gargoyles"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual é o nome do porquinho que é melhor amigo do Pernalonga?",
+    "options": [
+      "Gaguinho",
+      "Patolino",
+      "Frajola",
+      "Ligeirinho"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual desenho conta a história de três meninas com superpoderes criadas em laboratório pelo Professor Utônio?",
+    "options": [
+      "As Trigêmeas",
+      "As Três Espiãs Demais",
+      "As Meninas Superpoderosas",
+      "W.I.T.C.H."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual é o nome do garoto genial que tem um laboratório secreto escondido de sua irmã Dee Dee?",
+    "options": [
+      "Jimmy Neutron",
+      "Dexter",
+      "Johnny Test",
+      "Phineas"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "Qual empresa foi fundada por Steve Jobs, Steve Wozniak e Ronald Wayne em 1976?",
+    "options": [
+      "Microsoft",
+      "Apple",
+      "IBM",
+      "Google"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "Qual linguagem de programação foi criada por Guido van Rossum e tem uma cobra como símbolo?",
+    "options": [
+      "Java",
+      "JavaScript",
+      "Python",
+      "Ruby"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "O que significa a sigla 'HTML' usada no desenvolvimento web?",
+    "options": [
+      "Hyper Text Markup Language",
+      "High Technology Modern Language",
+      "Home Tool Markup Language",
+      "Hyperlinks and Text Markup Language"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "Qual rede social foi criada por Mark Zuckerberg em 2004?",
+    "options": [
+      "Twitter",
+      "Facebook",
+      "Instagram",
+      "LinkedIn"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "Qual sistema operacional de código aberto foi criado por Linus Torvalds?",
+    "options": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Unix"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "O que significa a sigla 'CPU' em computação?",
+    "options": [
+      "Central Processing Unit",
+      "Computer Personal Unit",
+      "Central Program Utility",
+      "Computer Processing Utility"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "Qual empresa desenvolveu o sistema operacional Android?",
+    "options": [
+      "Apple",
+      "Microsoft",
+      "Google",
+      "Samsung"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "O que é 'Inteligência Artificial' (IA)?",
+    "options": [
+      "Um tipo de vírus de computador",
+      "Uma tecnologia que permite que máquinas simulem a inteligência humana",
+      "Um novo modelo de smartphone",
+      "Um sistema de segurança de rede"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "Qual tecnologia permite a comunicação sem fio de curto alcance entre dispositivos?",
+    "options": [
+      "Wi-Fi",
+      "Bluetooth",
+      "4G",
+      "Ethernet"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "O que significa a sigla 'USB'?",
+    "options": [
+      "Universal System Bus",
+      "United Serial Bus",
+      "Universal Serial Bus",
+      "Unified System Base"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Meio Ambiente",
+    "question": "Qual é a maior floresta tropical do mundo?",
+    "options": [
+      "Floresta do Congo",
+      "Floresta Amazônica",
+      "Taiga",
+      "Floresta Tropical do Sudeste Asiático"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Meio Ambiente",
+    "question": "Qual gás é o principal responsável pelo efeito estufa?",
+    "options": [
+      "Oxigênio",
+      "Nitrogênio",
+      "Dióxido de carbono (CO2)",
+      "Hidrogênio"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Meio Ambiente",
+    "question": "Qual é o processo pelo qual as plantas produzem seu próprio alimento usando luz solar?",
+    "options": [
+      "Respiração",
+      "Fotossíntese",
+      "Transpiração",
+      "Fermentação"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Meio Ambiente",
+    "question": "Qual camada da atmosfera protege a Terra dos raios ultravioleta do Sol?",
+    "options": [
+      "Troposfera",
+      "Estratosfera (camada de ozônio)",
+      "Mesosfera",
+      "Termosfera"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Meio Ambiente",
+    "question": "Qual animal está ameaçado de extinção e é símbolo da conservação da natureza?",
+    "options": [
+      "Tigre",
+      "Panda gigante",
+      "Elefante africano",
+      "Todos os anteriores"
     ],
     "answerIndex": 3
   },
   {
-    "state": "Paraná",
-    "question": "Qual o animal característico do estado do Paraná?",
+    "theme": "Meio Ambiente",
+    "question": "Qual é o termo usado para descrever a variedade de vida na Terra?",
     "options": [
-      "Javali",
-      "Onça pintada",
-      "Capivara",
-      "Peixe boi"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "state": "Paraná",
-    "question": "O jardim botânico de Curitiba é um dos pontos turísticos mais visitados da cidade, inaugurado em 1991. O jardim teve por inspiração:",
-    "options": [
-      "Jardins Franceses",
-      "Floresta Amazônica",
-      "Rio Paraná",
-      "Jardim do palácio de Buckingham"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "state": "Paraná",
-    "question": "A Usina Hidrelétrica de Itaipu é uma gigante binacional localizada no Rio Paraná. Quais os países que fazem fronteira e gerenciam a Usina?",
-    "options": [
-      "México e EUA",
-      "Brasil e Paraguai",
-      "Japão e Brasil",
-      "Brasil e México"
+      "Ecossistema",
+      "Biodiversidade",
+      "Bioma",
+      "Habitat"
     ],
     "answerIndex": 1
   },
   {
-    "state": "Mato Grosso do Sul",
-    "question": "Qual o nome de um dos responsáveis pela criação do estado do Mato Grosso do Sul?",
+    "theme": "Meio Ambiente",
+    "question": "Qual prática ajuda a reduzir a quantidade de lixo nos aterros sanitários?",
     "options": [
-      "Marechal Rondon",
-      "Getúlio Vargas",
-      "Juscelino Kubitschek",
-      "Tancredo Neves"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "state": "Mato Grosso do Sul",
-    "question": "Qual a bebida típica mais consumida no Mato Grosso do Sul?",
-    "options": [
-      "Tereré",
-      "Chimarrão",
-      "Café",
-      "Chá mate"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "state": "Mato Grosso do Sul",
-    "question": "Qual o animal mais conhecido da Região Pantaneira?",
-    "options": [
-      "Onça",
-      "Capivara",
-      "Arara",
-      "Tucano"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "state": "Paraíba",
-    "question": "Na apresentação sobre os encantos da Paraíba, que personagens nos levaram a conhecer cidades, cultura e culinária?",
-    "options": [
-      "Zé Ramalho",
-      "Elba Ramalho",
-      "Os tropeiros",
-      "Ariano Suassuna"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "state": "Paraíba",
-    "question": "Onde Zé Ramalho nasceu?",
-    "options": [
-      "Brejo do Cruz",
-      "Campina Grande",
-      "Souza",
-      "Patos"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "state": "Paraíba",
-    "question": "Que artista paraibana é conhecida como a madrinha do Maior São João do Mundo?",
-    "options": [
-      "Marines",
-      "Elba Ramalho",
-      "Rita de Cássia",
-      "Eliane"
+      "Queimar o lixo",
+      "Reciclagem",
+      "Jogar no oceano",
+      "Enterrar no quintal"
     ],
     "answerIndex": 1
   },
   {
-    "state": "São Paulo",
-    "question": "Qual das cidades abaixo é conhecida como Terra da garoa?",
+    "theme": "Meio Ambiente",
+    "question": "Qual é o principal poluente que contribui para a chuva ácida?",
     "options": [
-      "Rio de Janeiro",
-      "Gramado",
-      "São Paulo",
-      "Garanhuns"
+      "Dióxido de enxofre (SO2)",
+      "Oxigênio",
+      "Vapor d'água",
+      "Argônio"
     ],
-    "answerIndex": 2
+    "answerIndex": 0
   },
   {
-    "state": "São Paulo",
-    "question": "Qual o estado mais populoso do Brasil?",
+    "theme": "Meio Ambiente",
+    "question": "Qual bioma brasileiro é conhecido como 'berço das águas' por abrigar nascentes de importantes bacias hidrográficas?",
     "options": [
-      "Amazonas",
-      "São Paulo",
-      "Rio de Janeiro",
-      "Paraná"
+      "Amazônia",
+      "Cerrado",
+      "Mata Atlântica",
+      "Pantanal"
     ],
     "answerIndex": 1
   },
   {
-    "state": "São Paulo",
-    "question": "Rita Lee, Charlie Brown Jr e Maria Rita são cantores conhecidos nacionalmente. Todos eles nasceram no estado de:",
+    "theme": "Meio Ambiente",
+    "question": "Qual evento global é realizado no dia 5 de junho?",
     "options": [
-      "São Paulo",
-      "Rio de Janeiro",
-      "Espírito Santo",
-      "Bahia"
+      "Dia da Terra",
+      "Dia Mundial do Meio Ambiente",
+      "Dia da Árvore",
+      "Dia Mundial dos Oceanos"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Personalidades",
+    "question": "Qual filósofa francesa existencialista escreveu 'O Segundo Sexo' em 1949, obra fundamental para o feminismo?",
+    "options": [
+      "Hannah Arendt",
+      "Simone de Beauvoir",
+      "Virginia Woolf",
+      "Susan Sontag"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Personalidades",
+    "question": "Quem foi o matemático britânico que decifrou o código Enigma durante a Segunda Guerra Mundial e é considerado o pai da computação?",
+    "options": [
+      "John von Neumann",
+      "Claude Shannon",
+      "Alan Turing",
+      "Kurt Gödel"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Personalidades",
+    "question": "Qual líder indígena brasileira do povo Munduruku se destacou na luta contra a construção de hidrelétricas na Amazônia?",
+    "options": [
+      "Sônia Guajajara",
+      "Raoni Metuktire",
+      "Alessandra Korap Munduruku",
+      "Ailton Krenak"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Personalidades",
+    "question": "Qual poeta brasileiro foi preso durante a ditadura militar e escreveu 'Calabar: o Elogio da Traição'?",
+    "options": [
+      "Ferreira Gullar",
+      "Chico Buarque",
+      "Vinicius de Moraes",
+      "Carlos Drummond de Andrade"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Personalidades",
+    "question": "Quem foi o astrofísico que popularizou a ciência através da série 'Cosmos' nos anos 1980?",
+    "options": [
+      "Neil deGrasse Tyson",
+      "Carl Sagan",
+      "Stephen Hawking",
+      "Brian Cox"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Música",
+    "question": "Qual compositor clássico ficou completamente surdo mas continuou compondo, incluindo sua famosa Nona Sinfonia?",
+    "options": [
+      "Franz Schubert",
+      "Ludwig van Beethoven",
+      "Johannes Brahms",
+      "Robert Schumann"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Música",
+    "question": "Qual cantora brasileira gravou o álbum 'Elis & Tom' em 1974, considerado uma obra-prima da MPB?",
+    "options": [
+      "Maria Bethânia",
+      "Gal Costa",
+      "Elis Regina",
+      "Nara Leão"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Música",
+    "question": "Qual movimento musical brasileiro dos anos 1960 misturou rock, psicodelia e cultura brasileira, com artistas como Caetano Veloso e Gilberto Gil?",
+    "options": [
+      "Bossa Nova",
+      "Jovem Guarda",
+      "Tropicália",
+      "MPB"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Música",
+    "question": "Qual é o nome da técnica vocal usada no rap em que o artista cria batidas e sons usando apenas a boca?",
+    "options": [
+      "Scratching",
+      "Sampling",
+      "Beatbox",
+      "Freestyling"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "theme": "Música",
+    "question": "Qual álbum dos Beatles, lançado em 1967, é considerado um dos mais influentes da história do rock?",
+    "options": [
+      "Abbey Road",
+      "Sgt. Pepper's Lonely Hearts Club Band",
+      "The White Album",
+      "Revolver"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Cinema",
+    "question": "Qual filme de Stanley Kubrick, de 1968, revolucionou os efeitos especiais e a ficção científica no cinema?",
+    "options": [
+      "Blade Runner",
+      "2001: Uma Odisseia no Espaço",
+      "Solaris",
+      "Alien"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Cinema",
+    "question": "Qual diretor japonês é conhecido por filmes como 'Os Sete Samurais' e 'Rashomon'?",
+    "options": [
+      "Hayao Miyazaki",
+      "Akira Kurosawa",
+      "Yasujiro Ozu",
+      "Takeshi Kitano"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Cinema",
+    "question": "Qual atriz brasileira foi indicada ao Emmy Internacional por sua atuação em 'Avenida Brasil'?",
+    "options": [
+      "Débora Falabella",
+      "Adriana Esteves",
+      "Fernanda Montenegro",
+      "Taís Araújo"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Cinema",
+    "question": "Qual técnica cinematográfica, desenvolvida pelos irmãos Lumière, foi a base para o surgimento do cinema?",
+    "options": [
+      "Stop motion",
+      "Cinematógrafo",
+      "Câmera obscura",
+      "Lanterna mágica"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Cinema",
+    "question": "Qual filme brasileiro de Walter Salles concorreu ao Oscar de Melhor Filme Estrangeiro em 1999?",
+    "options": [
+      "Cidade de Deus",
+      "Central do Brasil",
+      "O Quatrilho",
+      "O Auto da Compadecida"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Viagens",
+    "question": "Qual é a capital da Islândia, país conhecido por seus gêiseres e auroras boreais?",
+    "options": [
+      "Oslo",
+      "Reykjavik",
+      "Helsinki",
+      "Copenhagen"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Viagens",
+    "question": "Em qual país está localizada a antiga cidade de Petra, esculpida em rochas rosadas?",
+    "options": [
+      "Egito",
+      "Jordânia",
+      "Síria",
+      "Líbano"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Viagens",
+    "question": "Qual arquipélago português é conhecido como 'Pérola do Atlântico' e é famoso pelo vinho Madeira?",
+    "options": [
+      "Açores",
+      "Ilha da Madeira",
+      "Canárias",
+      "Cabo Verde"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Viagens",
+    "question": "Qual cidade italiana é conhecida como a 'Cidade Eterna' e foi o centro do Império Romano?",
+    "options": [
+      "Florença",
+      "Roma",
+      "Milão",
+      "Nápoles"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Viagens",
+    "question": "Qual país possui o maior número de Patrimônios Mundiais da UNESCO?",
+    "options": [
+      "França",
+      "Itália",
+      "China",
+      "Espanha"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Esporte",
+    "question": "Qual jogador de basquete é considerado o maior de todos os tempos e jogou pelo Chicago Bulls nos anos 1990?",
+    "options": [
+      "LeBron James",
+      "Michael Jordan",
+      "Kobe Bryant",
+      "Magic Johnson"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Esporte",
+    "question": "Qual brasileiro é o único piloto na história a ser campeão mundial de Fórmula 1 postumamente?",
+    "options": [
+      "Nelson Piquet",
+      "Ayrton Senna",
+      "Emerson Fittipaldi",
+      "Rubens Barrichello"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Esporte",
+    "question": "Qual país sediou a primeira Copa do Mundo de Futebol em 1930?",
+    "options": [
+      "Brasil",
+      "Uruguai",
+      "Itália",
+      "Argentina"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Esporte",
+    "question": "Qual ginasta brasileira conquistou a primeira medalha olímpica individual do país na ginástica artística em 2016?",
+    "options": [
+      "Daiane dos Santos",
+      "Rebeca Andrade",
+      "Jade Barbosa",
+      "Flávia Saraiva"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Esporte",
+    "question": "Qual tenista tem o recorde de mais títulos do Grand Slam Roland Garros (Aberto da França)?",
+    "options": [
+      "Roger Federer",
+      "Rafael Nadal",
+      "Novak Djokovic",
+      "Bjorn Borg"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Novela",
+    "question": "Qual novela de Dias Gomes foi censurada em 1975 e só foi ao ar em 1985?",
+    "options": [
+      "O Bem-Amado",
+      "Roque Santeiro",
+      "Saramandaia",
+      "Irmãos Coragem"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Novela",
+    "question": "Qual atriz interpretou a personagem Odete Roitman na novela 'Vale Tudo'?",
+    "options": [
+      "Regina Duarte",
+      "Beatriz Segall",
+      "Fernanda Montenegro",
+      "Eva Wilma"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Novela",
+    "question": "Qual novela de Gilberto Braga abordou pela primeira vez um personagem LGBT como protagonista?",
+    "options": [
+      "Vale Tudo",
+      "Dancin' Days",
+      "Anos Dourados",
+      "Paraíso Tropical"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Novela",
+    "question": "Qual autor brasileiro escreveu a novela 'Irmãos Coragem', exibida em 1970?",
+    "options": [
+      "Janete Clair",
+      "Dias Gomes",
+      "Jorge Andrade",
+      "Lauro César Muniz"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Novela",
+    "question": "Qual novela de 2002 marcou a volta de Regina Duarte à TV após 13 anos de ausência?",
+    "options": [
+      "Mulheres Apaixonadas",
+      "Páginas da Vida",
+      "Celebridade",
+      "Senhora do Destino"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual animador japonês é conhecido como o 'Walt Disney do Japão' e criou o Studio Ghibli?",
+    "options": [
+      "Osamu Tezuka",
+      "Hayao Miyazaki",
+      "Makoto Shinkai",
+      "Mamoru Hosoda"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual técnica de animação quadro a quadro foi usada no filme 'O Estranho Mundo de Jack'?",
+    "options": [
+      "Rotoscopia",
+      "Stop motion",
+      "CGI",
+      "Animação 2D"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual é o nome do criador dos personagens Mickey Mouse e Donald Duck?",
+    "options": [
+      "Chuck Jones",
+      "Walt Disney",
+      "Tex Avery",
+      "Hanna-Barbera"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual anime japonês conta a história de um alquimista que busca a Pedra Filosofal após perder seu corpo?",
+    "options": [
+      "Death Note",
+      "Fullmetal Alchemist",
+      "Attack on Titan",
+      "Hunter x Hunter"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Desenho",
+    "question": "Qual desenho brasileiro criado por Mauricio de Sousa tem como protagonista um menino careca e dentuço?",
+    "options": [
+      "Chico Bento",
+      "Cebolinha",
+      "Cascão",
+      "Franjinha"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "Qual cientista da computação criou a World Wide Web (WWW) em 1989?",
+    "options": [
+      "Bill Gates",
+      "Tim Berners-Lee",
+      "Larry Page",
+      "Steve Jobs"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "Qual é o nome do supercomputador da IBM que venceu campeões de xadrez e do programa Jeopardy!?",
+    "options": [
+      "Deep Blue e Watson",
+      "AlphaGo",
+      "HAL 9000",
+      "Skynet"
     ],
     "answerIndex": 0
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "Qual linguagem de programação foi desenvolvida especificamente para aplicações web no lado do servidor?",
+    "options": [
+      "C++",
+      "PHP",
+      "Assembly",
+      "Swift"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "Qual é o nome do protocolo de segurança que criptografa dados transmitidos entre navegadores e servidores web?",
+    "options": [
+      "FTP",
+      "HTTPS",
+      "SMTP",
+      "SSH"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Tecnologia",
+    "question": "Qual empresa criou o primeiro processador comercial de 32 bits, o Intel 80386?",
+    "options": [
+      "AMD",
+      "Intel",
+      "Motorola",
+      "IBM"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Meio Ambiente",
+    "question": "Qual é o nome do acordo internacional de 2015 que visa limitar o aquecimento global a 1,5°C?",
+    "options": [
+      "Protocolo de Kyoto",
+      "Acordo de Paris",
+      "Convenção de Estocolmo",
+      "Tratado de Montreal"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Meio Ambiente",
+    "question": "Qual cientista brasileira foi pioneira no estudo da Mata Atlântica e criou o termo 'hotspot'?",
+    "options": [
+      "Bertha Lutz",
+      "Graziela Maciel Barroso",
+      "Nise da Silveira",
+      "Johanna Döbereiner"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Meio Ambiente",
+    "question": "Qual é o nome do fenômeno climático que causa o aquecimento anormal das águas do Oceano Pacífico?",
+    "options": [
+      "La Niña",
+      "El Niño",
+      "Monção",
+      "Tufão"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Meio Ambiente",
+    "question": "Qual país é o maior produtor de energia eólica do mundo?",
+    "options": [
+      "Estados Unidos",
+      "China",
+      "Alemanha",
+      "Brasil"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "theme": "Meio Ambiente",
+    "question": "Qual é o nome do processo de conversão de áreas verdes em desertos devido à degradação do solo?",
+    "options": [
+      "Eutrofização",
+      "Desertificação",
+      "Laterização",
+      "Salinização"
+    ],
+    "answerIndex": 1
   }
 ]

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sorteio - Roleta dos Estados</title>
+  <title>Autêntico 30 Anos - Quiz dos Temas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -11,27 +11,76 @@
 </head>
 <body>
   <div id="app">
+    <!-- Elementos decorativos de fundo -->
+    <div class="bg-decoration"></div>
+    <div class="floating-logos">
+      <img src="./Logo contornada.png" class="floating-logo floating-logo-brand" style="--delay: 0s; --x: 5%; --y: 8%;">
+      <img src="./SELO30.svg" class="floating-logo" style="--delay: 1s; --x: 22%; --y: 15%;">
+      <img src="./Logo contornada.png" class="floating-logo floating-logo-brand" style="--delay: 2s; --x: 45%; --y: 5%;">
+      <img src="./SELO30.svg" class="floating-logo" style="--delay: 3s; --x: 72%; --y: 12%;">
+      <img src="./Logo contornada.png" class="floating-logo floating-logo-brand" style="--delay: 4s; --x: 90%; --y: 18%;">
+      
+      <img src="./SELO30.svg" class="floating-logo" style="--delay: 1.5s; --x: 8%; --y: 45%;">
+      <img src="./Logo contornada.png" class="floating-logo floating-logo-brand" style="--delay: 2.5s; --x: 92%; --y: 50%;">
+      
+      <img src="./Logo contornada.png" class="floating-logo floating-logo-brand" style="--delay: 3.5s; --x: 10%; --y: 75%;">
+      <img src="./SELO30.svg" class="floating-logo" style="--delay: 4.5s; --x: 35%; --y: 82%;">
+      <img src="./Logo contornada.png" class="floating-logo floating-logo-brand" style="--delay: 5.5s; --x: 60%; --y: 78%;">
+      <img src="./SELO30.svg" class="floating-logo" style="--delay: 6.5s; --x: 85%; --y: 85%;">
+    </div>
+    
     <header class="app-header">
-      <h1>XVII MOCAC Colégio Autêntico</h1>
+      <div class="header-title-wrapper">
+        <div class="title-decoration left"></div>
+        <h1 class="main-title">
+          <span class="title-line-1">Colégio Autêntico</span>
+          <span class="title-line-2">
+            <span class="number-30">30</span>
+            <span class="years-text">Anos de Excelência</span>
+          </span>
+        </h1>
+        <div class="title-decoration right"></div>
+      </div>
     </header>
 
     <main class="board">
       <section class="wheel-card">
-        <div class="wheel-wrapper">
-          <div class="pointer top" aria-hidden="true"></div>
-          <canvas id="wheel" width="560" height="560" aria-label="Roleta dos estados" role="img"></canvas>
-          <button id="spinBtn" class="wheel-center-btn">GIRAR</button>
+        <div class="card-logo-badge">
+          <img src="./SELO30.svg" alt="30 anos">
         </div>
-        <p class="helper-text">Visite todos os projetos, teste seus conhecimentos e concorra a brindes!</p>
+        <h2 class="card-title">Roleta dos Desafios</h2>
+        <div class="wheel-wrapper">
+          <div class="wheel-glow"></div>
+          <div class="pointer top" aria-hidden="true"></div>
+          <canvas id="wheel" width="420" height="420" aria-label="Roleta dos temas" role="img"></canvas>
+          <button id="spinBtn" class="wheel-center-btn">
+            <span class="btn-text">GIRAR</span>
+            <span class="btn-shine"></span>
+          </button>
+        </div>
+        <div class="helper-box">
+          <img src="./Logo contornada.png" alt="Logo" class="helper-logo">
+          <p class="helper-text">🎉 Celebrando 30 anos de história! Gire a roleta e mostre seus conhecimentos!</p>
+        </div>
       </section>
 
       <section class="quiz-card" id="quizCard" hidden>
-        <div id="stateBadge" class="state-badge"></div>
+        <div class="quiz-header">
+          <div class="quiz-logo-container">
+            <img src="./Logo contornada.png" alt="Logo Colégio Autêntico" class="quiz-logo">
+          </div>
+          <div id="themeBadge" class="theme-badge"></div>
+          <div class="quiz-selo-container">
+            <img src="./SELO30.svg" alt="30 anos" class="quiz-selo">
+          </div>
+        </div>
         <div class="timer" id="timer" hidden>
           <div class="timer-bar" id="timerBar"></div>
           <span id="timerText">20</span>
         </div>
-        <h2 id="questionText">Pergunta</h2>
+        <div class="question-container">
+          <h2 id="questionText">Pergunta</h2>
+        </div>
         <div id="options" class="options"></div>
         <div class="fx-layer" id="fxLayer" aria-hidden="true"></div>
         <div class="feedback" id="feedback" aria-live="polite"></div>
@@ -43,33 +92,29 @@
   <audio id="bgMusic" loop>
     <source src="./sound.mp3" type="audio/mpeg">
   </audio>
-  <div id="rewardsModal" class="rewards-modal" hidden>
-    <div class="rewards-content">
-      <h2>Escolha um número</h2>
-      <div class="rewards-grid">
-        <button class="reward-card" data-index="0">
-          <img src="./logo.png" alt="Logo" class="card-logo">
-          <span class="card-number">1</span>
-        </button>
-        <button class="reward-card" data-index="1">
-          <img src="./logo.png" alt="Logo" class="card-logo">
-          <span class="card-number">2</span>
-        </button>
-        <button class="reward-card" data-index="2">
-          <img src="./logo.png" alt="Logo" class="card-logo">
-          <span class="card-number">3</span>
-        </button>
-        <button class="reward-card" data-index="3">
-          <img src="./logo.png" alt="Logo" class="card-logo">
-          <span class="card-number">4</span>
-        </button>
-      </div>
-    </div>
-  </div>
   
   <!-- Botão de mute/unmute -->
   <button id="muteBtn" class="mute-btn" title="Ativar/Desativar som">
     <span class="mute-icon">🔊</span>
   </button>
+
+  <!-- Loading Screen -->
+  <div id="loadingScreen" class="loading-screen" hidden>
+    <div class="loading-content">
+      <div class="loading-selo-container">
+        <img src="./SELO30.svg" alt="30 anos" class="loading-selo">
+        <div class="loading-ring"></div>
+        <div class="loading-ring-2"></div>
+      </div>
+      <div class="loading-text">
+        <h2 class="loading-title">Preparando sua pergunta...</h2>
+        <div class="loading-dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

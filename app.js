@@ -1,6 +1,14 @@
-// Estados conforme perguntas disponíveis no questions.json
-const STATES = [
-  "Ceará","Rio de Janeiro","Goiás","Amazonas","Maranhão","Mato Grosso do Sul","Minas Gerais","Paraná","Paraíba","Pará","Pernambuco","Piauí","Rio Grande do Sul","São Paulo"
+// Temas para a roleta
+const THEMES = [
+  "Personalidades",
+  "Música",
+  "Cinema",
+  "Viagens",
+  "Esporte",
+  "Novela",
+  "Desenho",
+  "Tecnologia",
+  "Meio Ambiente"
 ];
 
 const wheelCanvas = document.getElementById('wheel');
@@ -9,58 +17,107 @@ const spinBtn = document.getElementById('spinBtn');
 const quizCard = document.getElementById('quizCard');
 const questionText = document.getElementById('questionText');
 const optionsContainer = document.getElementById('options');
-const stateBadge = document.getElementById('stateBadge');
+const themeBadge = document.getElementById('themeBadge');
 const feedback = document.getElementById('feedback');
 const fxLayer = document.getElementById('fxLayer');
 const timer = document.getElementById('timer');
 const timerBar = document.getElementById('timerBar');
 const timerText = document.getElementById('timerText');
-const rewardsModal = document.getElementById('rewardsModal');
 const bgMusic = document.getElementById('bgMusic');
 const muteBtn = document.getElementById('muteBtn');
-const nextBtn = document.getElementById('nextBtn') || { disabled:false };
-// sem contadores na UI
+const loadingScreen = document.getElementById('loadingScreen');
 
 let angle = -Math.PI/2; // start at top
 let spinning = false;
-let questionsByState = {};
-let currentState = null;
+let questionsByTheme = {};
+let currentTheme = null;
 let currentQuestion = null;
 let score = { hits: 0, misses: 0 };
 let countdownId = null;
 let remainingMs = 0;
-let prizes = [];
 let isMuted = false;
+let askedQuestions = {}; // Rastreia perguntas já feitas por tema
 
 function loadScore(){
-  try{ const saved = JSON.parse(localStorage.getItem('sorteio_score')||'null'); if(saved){score=saved;updateScoreUI();} }catch(e){}
+  try{ 
+    const saved = JSON.parse(localStorage.getItem('sorteio_score')||'null'); 
+    if(saved){
+      score=saved;
+      updateScoreUI();
+    } 
+  }catch(e){}
 }
-function saveScore(){ localStorage.setItem('sorteio_score', JSON.stringify(score)); }
-function updateScoreUI(){ /* UI de score removida */ }
 
-// Paleta com cores contrastantes (ordem segue STATES)
-const SEGMENT_COLORS = ['#f1d43b','#e74c3c','#4a90e2','#2ecc71','#9b59b6','#f39c12','#e67e22','#1abc9c','#34495e','#8e44ad','#f1c40f','#e74c3c','#27ae60','#3498db'];
-function segmentColors(i){ return SEGMENT_COLORS[i % SEGMENT_COLORS.length]; }
+function saveScore(){ 
+  localStorage.setItem('sorteio_score', JSON.stringify(score)); 
+}
 
-// Siglas (UF) para exibir nas fatias
-const UF = {
-  'Ceará':'CE','Rio de Janeiro':'RJ','Goiás':'GO','Amazonas':'AM','Maranhão':'MA','Mato Grosso do Sul':'MS','Minas Gerais':'MG','Paraná':'PR','Paraíba':'PB','Pará':'PA','Pernambuco':'PE','Piauí':'PI','Rio Grande do Sul':'RS','São Paulo':'SP'
-};
+function loadAskedQuestions(){
+  try{
+    const saved = JSON.parse(localStorage.getItem('sorteio_asked_questions')||'{}');
+    askedQuestions = saved;
+  }catch(e){
+    askedQuestions = {};
+  }
+}
+
+function saveAskedQuestions(){
+  localStorage.setItem('sorteio_asked_questions', JSON.stringify(askedQuestions));
+}
+
+function markQuestionAsAsked(theme, questionText){
+  if(!askedQuestions[theme]){
+    askedQuestions[theme] = [];
+  }
+  
+  if(!askedQuestions[theme].includes(questionText)){
+    askedQuestions[theme].push(questionText);
+    saveAskedQuestions();
+  }
+}
+
+function resetAskedQuestions(){
+  askedQuestions = {};
+  saveAskedQuestions();
+}
+
+function updateScoreUI(){ 
+  /* UI de score removida */ 
+}
+
+// Paleta com cores vibrantes e contrastantes para os temas
+const SEGMENT_COLORS = [
+  '#ff6b3d', // Laranja vibrante - Personalidades
+  '#e74c3c', // Vermelho - Música
+  '#9b59b6', // Roxo - Cinema
+  '#3498db', // Azul - Viagens
+  '#2ecc71', // Verde - Esporte
+  '#f39c12', // Amarelo alaranjado - Novela
+  '#1abc9c', // Turquesa - Desenho
+  '#4a90e2', // Azul claro - Tecnologia
+  '#27ae60'  // Verde escuro - Meio Ambiente
+];
+
+function segmentColors(i){ 
+  return SEGMENT_COLORS[i % SEGMENT_COLORS.length]; 
+}
 
 function drawWheel(){
-  const size = wheelCanvas.width; // square
-  const radius = size/2 - 10; // account border
+  const size = wheelCanvas.width;
+  const radius = size/2 - 10;
   const cx = size/2, cy = size/2;
   ctx.clearRect(0,0,size,size);
   ctx.save();
   ctx.translate(cx, cy);
   ctx.rotate(angle);
 
-  const segAngle = 2*Math.PI / STATES.length;
-  for(let i=0;i<STATES.length;i++){
+  const segAngle = 2*Math.PI / THEMES.length;
+  
+  for(let i=0;i<THEMES.length;i++){
     const start = i*segAngle;
     const end = start + segAngle;
-    // slice
+    
+    // Desenhar fatia
     ctx.beginPath();
     ctx.moveTo(0,0);
     ctx.arc(0,0,radius,start,end);
@@ -72,17 +129,18 @@ function drawWheel(){
     ctx.stroke();
   }
 
-  // Desenhar labels POR CIMA de tudo, centralizados e CLIPADOS na fatia
-  for(let i=0;i<STATES.length;i++){
+  // Desenhar labels por cima, centralizados e clipados na fatia
+  for(let i=0;i<THEMES.length;i++){
     const start = i*segAngle;
     const end = start + segAngle;
     const mid = (start+end)/2;
-    const marginAngle = 0.06; // margem para não encostar nas divisões
+    const marginAngle = 0.06;
     const innerR = radius*0.50;
     const outerR = radius*0.90;
 
     ctx.save();
-    // cria máscara da fatia
+    
+    // Criar máscara da fatia
     ctx.beginPath();
     ctx.moveTo(0,0);
     ctx.arc(0,0,outerR,start+marginAngle,end-marginAngle);
@@ -90,22 +148,25 @@ function drawWheel(){
     ctx.closePath();
     ctx.clip();
 
-    // posiciona
+    // Posicionar
     ctx.rotate(mid);
-    const label = (UF[STATES[i]] || STATES[i]).toUpperCase();
-    let fontSize = 18;
+    const label = THEMES[i].toUpperCase();
+    let fontSize = 16;
     ctx.font = `900 ${fontSize}px Inter, sans-serif`;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     const maxWidth = (outerR-innerR) * 0.85;
+    
     while(ctx.measureText(label).width > maxWidth && fontSize > 10){
       fontSize -= 1;
       ctx.font = `900 ${fontSize}px Inter, sans-serif`;
     }
-    // move ao centro radial entre inner e outer
+    
+    // Mover ao centro radial entre inner e outer
     const centerR = (innerR + outerR)/2;
     ctx.translate(centerR,0);
-    // perpendicular ao arco
+    
+    // Perpendicular ao arco
     ctx.rotate(Math.PI/2);
     ctx.lineWidth = 5;
     ctx.strokeStyle = 'rgba(255,255,255,1)';
@@ -115,7 +176,7 @@ function drawWheel(){
     ctx.restore();
   }
 
-  // hub
+  // Hub central
   ctx.beginPath();
   ctx.arc(0,0,radius*0.18,0,2*Math.PI);
   ctx.fillStyle = '#0a1120';
@@ -127,52 +188,33 @@ function drawWheel(){
   ctx.restore();
 }
 
-function wrapText(context, text, x, y, maxWidth, lineHeight){
-  const words = text.split(' ');
-  let line = '';
-  const lines = [];
-  for (let n = 0; n < words.length; n++) {
-    const testLine = line + (line? ' ':'') + words[n];
-    const metrics = context.measureText(testLine);
-    if (metrics.width > maxWidth && n > 0) {
-      lines.push(line);
-      line = words[n];
-    } else {
-      line = testLine;
-    }
-  }
-  lines.push(line);
-  const offset = -((lines.length-1)*lineHeight)/2;
-  for(let i=0;i<lines.length;i++){
-    context.fillText(lines[i], x, y + offset + i*lineHeight);
-  }
-}
-
-function pickStateByAngle(finalAngle){
+function pickThemeByAngle(finalAngle){
   const normalized = (finalAngle % (2*Math.PI) + 2*Math.PI) % (2*Math.PI);
-  const segAngle = 2*Math.PI / STATES.length;
-  // Ponteiro no topo (3π/2)
+  const segAngle = 2*Math.PI / THEMES.length;
   const pointerAngle = (3*Math.PI/2);
-  let index = Math.floor((pointerAngle - normalized + 2*Math.PI) / segAngle) % STATES.length;
-  if(index<0) index += STATES.length;
-  return { index, state: STATES[index] };
+  let index = Math.floor((pointerAngle - normalized + 2*Math.PI) / segAngle) % THEMES.length;
+  if(index<0) index += THEMES.length;
+  return { index, theme: THEMES[index] };
 }
 
 function alignAngleToIndex(index){
-  const segAngle = 2*Math.PI / STATES.length;
+  const segAngle = 2*Math.PI / THEMES.length;
   const pointerAngle = (3*Math.PI/2);
   return pointerAngle - (index + 0.5) * segAngle;
 }
 
 function spin(){
   if(spinning) return;
-  // garante que o modal esteja oculto e reinicia música
-  if(rewardsModal) rewardsModal.hidden = true;
+  
   if(bgMusic && !isMuted) {
     bgMusic.currentTime = 0;
     bgMusic.play().catch(e => console.log('Erro ao tocar música:', e));
   }
-  spinning = true; feedback.textContent=''; if(nextBtn) nextBtn.disabled = true; quizCard.hidden = true;
+  
+  spinning = true; 
+  feedback.textContent=''; 
+  quizCard.hidden = true;
+  
   const extraSpins = 4 + Math.floor(Math.random()*3); // 4-6 voltas
   const target = Math.random()*2*Math.PI;
   const startAngle = angle;
@@ -182,27 +224,35 @@ function spin(){
 
   function animate(now){
     const t = Math.min(1, (now - startTime)/duration);
-    // easeOutCubic
-    const eased = 1 - Math.pow(1-t, 3);
+    const eased = 1 - Math.pow(1-t, 3); // easeOutCubic
     angle = startAngle + (endAngle-startAngle) * eased;
     drawWheel();
+    
     if(t<1){
       requestAnimationFrame(animate);
     } else {
       spinning = false;
-      const picked = pickStateByAngle(angle);
-      // alinhar o centro do segmento sorteado exatamente ao ponteiro
+      const picked = pickThemeByAngle(angle);
+      
+      // Alinhar o centro do segmento sorteado exatamente ao ponteiro
       angle = alignAngleToIndex(picked.index);
       drawWheel();
-      currentState = picked.state;
-      // aguarda 2s, entra em modo tela cheia de pergunta
+      currentTheme = picked.theme;
+      
+      // Aguardar 1s, mostrar loading
       setTimeout(()=>{
-        const appEl = document.getElementById('app');
-        appEl.classList.add('quiz-full');
-        // manter layout em coluna única (centralizado)
-        document.querySelector('.board')?.classList.remove('two');
-        loadQuestionForState(currentState);
-      }, 2000);
+        // Mostrar loading screen
+        loadingScreen.hidden = false;
+        
+        // Após 2.5s de loading, mostrar pergunta
+        setTimeout(()=>{
+          loadingScreen.hidden = true;
+          const appEl = document.getElementById('app');
+          appEl.classList.add('quiz-full');
+          document.querySelector('.board')?.classList.remove('two');
+          loadQuestionForTheme(currentTheme);
+        }, 2500);
+      }, 1000);
     }
   }
   requestAnimationFrame(animate);
@@ -212,119 +262,53 @@ async function loadQuestions(){
   try{
     const res = await fetch('./questions.json', { cache: 'no-store' });
     const json = await res.json();
-    // Normalize keys for fast access
-    questionsByState = json.reduce((acc, q) => {
-      const key = q.state.trim();
+    
+    // Normalizar chaves para acesso rápido
+    questionsByTheme = json.reduce((acc, q) => {
+      const key = q.theme.trim();
       (acc[key] ||= []).push(q);
       return acc;
     },{});
   }catch(err){
     console.error('Falha ao carregar questions.json', err);
-    questionsByState = {};
+    questionsByTheme = {};
   }
 }
 
-async function loadPrizes(){
-  try{
-    const res = await fetch('./prizes.json', { cache: 'no-store' });
-    prizes = await res.json();
-  }catch(e){
-    prizes = [
-      { name:'Balinha', weight:60 },
-      { name:'Caneta', weight:25 },
-      { name:'Bolsa', weight:10 },
-      { name:'Boné', weight:5 }
-    ];
-  }
-}
-
-function weightedPick(items){
-  const total = items.reduce((s,i)=>s+i.weight,0);
-  let r = Math.random()*total;
-  for(const it of items){
-    if((r-=it.weight) <= 0) return it;
-  }
-  return items[items.length-1];
-}
-
-function showRewards(){
-  rewardsModal.hidden = false;
-  const cards = rewardsModal.querySelectorAll('.reward-card');
-  
-  // Sortear o prêmio real primeiro
-  const realPrize = weightedPick(prizes);
-  
-  // Criar prêmios falsos (diferentes do real)
-  const fakePrizes = prizes.filter(p => p.name !== realPrize.name);
-  
-  // resetar cards para mostrar logo e número
-  let chosen = false;
-  cards.forEach((btn,i)=>{
-    const logo = btn.querySelector('.card-logo');
-    const number = btn.querySelector('.card-number');
-    logo.style.display = 'block';
-    number.textContent = String(i+1);
-    number.style.display = 'block';
-    btn.classList.remove('revealed');
-    btn.disabled = false;
-    btn.style.opacity = 1; // resetar opacidade
-    btn.style.filter = 'none'; // resetar filtro
-    btn.style.transform = 'none'; // resetar transformação
-    btn.style.boxShadow = 'none'; // resetar sombra
-    btn.onclick = ()=>{
-      if(chosen) return;
-      chosen = true;
-      
-      // Mostrar prêmio real no card escolhido
-      logo.style.display = 'none';
-      number.textContent = `🎁 ${realPrize.name}`;
-      btn.classList.add('revealed');
-      
-      // Destacar o card escolhido (prêmio real)
-      btn.style.opacity = 1;
-      btn.style.filter = 'none';
-      btn.style.transform = 'scale(1.05)';
-      btn.style.boxShadow = '0 8px 25px rgba(0,0,0,0.3)';
-      
-      // Mostrar prêmios falsos nos outros cards (ilusão visual)
-      cards.forEach((otherBtn, otherIndex) => {
-        if(otherBtn !== btn) {
-          otherBtn.disabled = true;
-          otherBtn.style.opacity = 0.3; // Mais emagrecido
-          otherBtn.style.filter = 'grayscale(100%)'; // Preto e branco
-          
-          // Escolher um prêmio falso aleatório
-          const fakePrize = fakePrizes[Math.floor(Math.random() * fakePrizes.length)];
-          const otherLogo = otherBtn.querySelector('.card-logo');
-          const otherNumber = otherBtn.querySelector('.card-number');
-          
-          otherLogo.style.display = 'none';
-          otherNumber.textContent = `🎁 ${fakePrize.name}`;
-          otherBtn.classList.add('revealed');
-        }
-      });
-      
-      // fechar após escolha
-      setTimeout(()=>{ rewardsModal.hidden = true; }, 2000);
-    };
-  });
-}
-
-function getRandomQuestion(state){
-  const list = questionsByState[state] || [];
+function getRandomQuestion(theme){
+  const list = questionsByTheme[theme] || [];
   if(list.length === 0) return null;
-  return list[Math.floor(Math.random()*list.length)];
+  
+  // Obter perguntas já feitas para este tema
+  const asked = askedQuestions[theme] || [];
+  
+  // Filtrar perguntas não feitas
+  const availableQuestions = list.filter(q => !asked.includes(q.question));
+  
+  // Se todas as perguntas já foram feitas, resetar o tema
+  if(availableQuestions.length === 0){
+    askedQuestions[theme] = [];
+    saveAskedQuestions();
+    return list[Math.floor(Math.random()*list.length)];
+  }
+  
+  // Retornar uma pergunta aleatória das disponíveis
+  return availableQuestions[Math.floor(Math.random()*availableQuestions.length)];
 }
 
 function renderQuestion(){
   if(!currentQuestion){ return; }
-  stateBadge.textContent = currentState;
+  
+  // Marcar pergunta como feita
+  markQuestionAsAsked(currentTheme, currentQuestion.question);
+  
+  themeBadge.textContent = currentTheme;
   questionText.textContent = currentQuestion.question;
   optionsContainer.innerHTML = '';
   feedback.textContent = '';
   fxLayer.innerHTML = '';
-  // sem botão Próxima: apenas aguarda nova rotação
-  startTimer(60000);
+  
+  startTimer(20000); // 20 segundos
 
   currentQuestion.options.forEach((opt, i)=>{
     const btn = document.createElement('button');
@@ -333,63 +317,72 @@ function renderQuestion(){
     btn.onclick = ()=> selectAnswer(btn, i);
     optionsContainer.appendChild(btn);
   });
+  
   quizCard.hidden = false;
 }
 
 function selectAnswer(button, index){
-  // prevent multiple
+  // Prevenir múltiplas respostas
   const already = optionsContainer.querySelector('.option.selected, .option.correct, .option.incorrect');
   if(already) return;
+  
   const isCorrect = index === currentQuestion.answerIndex;
   button.classList.add('selected');
-  // marca apenas a escolhida; não revela a correta quando erra
+  
+  // Marcar a resposta escolhida e mostrar a correta se errou
   [...optionsContainer.children].forEach((el, i)=>{
-    if(i===index){ el.classList.add(isCorrect ? 'correct' : 'incorrect'); }
+    if(i===index){ 
+      el.classList.add(isCorrect ? 'correct' : 'incorrect'); 
+    }
+    // Se errou, mostrar também qual era a resposta correta
+    if(!isCorrect && i === currentQuestion.answerIndex){
+      el.classList.add('correct');
+    }
   });
+  
   if(isCorrect){
-    feedback.textContent = 'Você acertou!';
+    feedback.textContent = '🎉 Parabéns! Você acertou!';
     score.hits += 1;
     shootConfetti();
-    // Mostrar prêmios imediatamente
-    setTimeout(()=>{ showRewards(); }, 800);
-    // após 5s, volta para a roleta para o próximo jogador
+    
+    // Após 3s, volta para a roleta para o próximo jogador
     setTimeout(()=>{
       document.getElementById('app').classList.remove('quiz-full');
       document.querySelector('.board')?.classList.remove('two');
       quizCard.hidden = true;
-    }, 5000);
+    }, 3000);
   } else {
-    feedback.textContent = 'Você errou.';
+    feedback.textContent = '❌ Resposta incorreta. A resposta certa está destacada em verde.';
     score.misses += 1;
     showSad();
-    // após 5s, volta para a roleta
+    
+    // Após 5s, volta para a roleta (mais tempo para ver a resposta correta)
     setTimeout(()=>{
       document.getElementById('app').classList.remove('quiz-full');
       document.querySelector('.board')?.classList.remove('two');
       quizCard.hidden = true;
     }, 5000);
   }
+  
   updateScoreUI();
   saveScore();
-  // aguarda nova rotação
   stopTimer();
 }
 
-function loadQuestionForState(state){
-  currentQuestion = getRandomQuestion(state);
+function loadQuestionForTheme(theme){
+  currentQuestion = getRandomQuestion(theme);
+  
   if(!currentQuestion){
     quizCard.hidden = false;
-    stateBadge.textContent = state;
-    questionText.textContent = 'Sem perguntas para este estado.';
+    themeBadge.textContent = theme;
+    questionText.textContent = 'Sem perguntas para este tema.';
     optionsContainer.innerHTML = '';
     feedback.textContent = 'Edite o arquivo questions.json para adicionar perguntas.';
-    nextBtn.disabled = false;
     return;
   }
+  
   renderQuestion();
 }
-
-// removido botão próxima – fluxo segue com nova rotação
 
 function reset(){
   score = { hits:0, misses:0 };
@@ -399,11 +392,12 @@ function reset(){
   const appEl = document.getElementById('app');
   appEl.classList.remove('quiz-full');
   document.querySelector('.board')?.classList.remove('two');
-  if(rewardsModal) rewardsModal.hidden = true;
 }
 
 function resizeCanvas(){
-  const size = Math.min(560, Math.min(wheelCanvas.parentElement.clientWidth-32, 560));
+  const container = wheelCanvas.parentElement;
+  const maxSize = Math.min(container.clientWidth, container.clientHeight) - 50;
+  const size = Math.min(420, maxSize);
   wheelCanvas.width = size;
   wheelCanvas.height = size;
   drawWheel();
@@ -416,30 +410,51 @@ function startTimer(ms){
   timerText.textContent = Math.ceil(remainingMs/1000);
   const start = performance.now();
   const end = start + ms;
+  
   if(countdownId) cancelAnimationFrame(countdownId);
+  
   function step(now){
     const left = Math.max(0, end - now);
     remainingMs = left;
     const pct = left / ms;
     timerBar.style.width = `${pct*100}%`;
     timerText.textContent = String(Math.ceil(left/1000));
-    if(left>0){ countdownId = requestAnimationFrame(step); }
-    else { timeUp(); }
+    
+    if(left>0){ 
+      countdownId = requestAnimationFrame(step); 
+    } else { 
+      timeUp(); 
+    }
   }
   countdownId = requestAnimationFrame(step);
 }
 
 function stopTimer(){
-  if(countdownId){ cancelAnimationFrame(countdownId); countdownId = null; }
+  if(countdownId){ 
+    cancelAnimationFrame(countdownId); 
+    countdownId = null; 
+  }
   timer.hidden = true;
 }
 
 function timeUp(){
-  // bloqueia respostas se tempo acabou
+  // Bloquear respostas se tempo acabou
   if(optionsContainer.querySelector('.option.correct, .option.incorrect')) return;
-  feedback.textContent = 'Tempo esgotado.';
+  
+  // Mostrar a resposta correta quando o tempo acaba
+  [...optionsContainer.children].forEach((el, i)=>{
+    if(i === currentQuestion.answerIndex){
+      el.classList.add('correct');
+    }
+    // Desabilitar todos os botões
+    el.disabled = true;
+    el.style.cursor = 'not-allowed';
+  });
+  
+  feedback.textContent = '⏰ Tempo esgotado! A resposta correta está destacada em verde.';
   showSad();
-  // volta para a roleta após 5s
+  
+  // Voltar para a roleta após 5s (mais tempo para ver a resposta correta)
   setTimeout(()=>{
     document.getElementById('app').classList.remove('quiz-full');
     document.querySelector('.board')?.classList.remove('two');
@@ -449,6 +464,7 @@ function timeUp(){
 
 function shootConfetti(){
   const colors = ['#ff6b3d','#ffd166','#06d6a0','#4cc9f0','#c77dff','#ff8fab','#94f7c5'];
+  
   for(let i=0;i<220;i++){
     const p = document.createElement('div');
     p.className = 'confetti';
@@ -456,13 +472,16 @@ function shootConfetti(){
     p.style.transform = `translate(-50%,0) rotate(${Math.random()*360}deg)`;
     p.style.left = `${50 + (Math.random()*80-40)}%`;
     fxLayer.appendChild(p);
+    
     const duration = 2200 + Math.random()*1800;
     const dx = (Math.random()*2-1)*360;
     const dy = 500 + Math.random()*380;
+    
     p.animate([
       { transform: `translate(${dx*0.0}px, -10px) rotate(0deg)` , opacity:1 },
       { transform: `translate(${dx}px, ${dy}px) rotate(1080deg)`, opacity:0 }
     ], { duration, easing:'cubic-bezier(.2,.7,.2,1)', fill:'forwards' });
+    
     setTimeout(()=>p.remove(), duration+50);
   }
 }
@@ -480,10 +499,12 @@ window.addEventListener('resize', resizeCanvas);
 spinBtn.addEventListener('click', spin);
 
 loadScore();
+loadAskedQuestions();
 resizeCanvas();
-Promise.all([loadQuestions(), loadPrizes()]).then(()=>{
+loadQuestions().then(()=>{
   drawWheel();
-  // iniciar música em loop
+  
+  // Iniciar música em loop
   if(bgMusic && !isMuted) {
     bgMusic.play().catch(e => console.log('Erro ao tocar música:', e));
   }
@@ -492,6 +513,7 @@ Promise.all([loadQuestions(), loadPrizes()]).then(()=>{
 // Controle de mute/unmute
 function toggleMute(){
   isMuted = !isMuted;
+  
   if(bgMusic){
     if(isMuted){
       bgMusic.pause();
