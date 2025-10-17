@@ -193,8 +193,8 @@ body::after{
   flex-direction:column;
   align-items:center;
   justify-content:flex-start;
-  gap:15px;
-  max-width:650px;
+  gap:20px;
+  max-width:750px;
   margin:0 auto;
   flex:1;
 }
@@ -203,13 +203,13 @@ body::after{
   background:linear-gradient(145deg, rgba(17,24,39,0.95), rgba(13,20,33,0.95));
   border:2px solid rgba(91,140,255,0.2);
   border-radius:20px;
-  padding:20px;
+  padding:25px;
   box-shadow:
     0 15px 40px rgba(0,0,0,0.5),
     inset 0 1px 0 rgba(255,255,255,0.1),
     0 0 0 1px rgba(91,140,255,0.1);
   width:100%;
-  max-width:600px;
+  max-width:680px;
   position:relative;
   overflow:visible;
   backdrop-filter:blur(10px);
@@ -234,10 +234,10 @@ body::after{
 /* Badge do selo no card */
 .card-logo-badge{
   position:absolute;
-  top:10px;
-  right:10px;
-  width:45px;
-  height:45px;
+  top:12px;
+  right:12px;
+  width:50px;
+  height:50px;
   z-index:10;
 }
 
@@ -254,10 +254,10 @@ body::after{
 }
 
 .card-title{
-  font-size:22px;
+  font-size:26px;
   font-weight:800;
   text-align:center;
-  margin:0 0 15px 0;
+  margin:0 0 20px 0;
   background:linear-gradient(135deg, var(--gold) 0%, #fff 50%, var(--primary) 100%);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
@@ -271,7 +271,7 @@ body::after{
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:15px;
+  padding:20px;
   margin:0 auto;
   width:100%;
   max-width:100%;
@@ -337,19 +337,19 @@ body::after{
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
-  width:120px;
-  height:120px;
+  width:150px;
+  height:150px;
   border-radius:50%;
   background:linear-gradient(145deg, var(--gold) 0%, var(--gold-light) 100%);
-  border:4px solid #fff;
+  border:5px solid #fff;
   color:#0a0e1a;
   font-weight:900;
-  font-size:18px;
+  font-size:22px;
   letter-spacing:2px;
   cursor:pointer;
   transition:all 0.3s ease;
   box-shadow:
-    0 8px 24px rgba(255,215,0,0.6),
+    0 10px 30px rgba(255,215,0,0.6),
     inset 0 2px 4px rgba(255,255,255,0.5),
     inset 0 -2px 4px rgba(0,0,0,0.2);
   z-index:100;

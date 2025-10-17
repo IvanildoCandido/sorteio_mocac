@@ -396,8 +396,8 @@ function reset(){
 
 function resizeCanvas(){
   const container = wheelCanvas.parentElement;
-  const maxSize = Math.min(container.clientWidth, container.clientHeight) - 50;
-  const size = Math.min(420, maxSize);
+  const maxSize = Math.min(container.clientWidth, container.clientHeight) - 40;
+  const size = Math.min(500, maxSize);
   wheelCanvas.width = size;
   wheelCanvas.height = size;
   drawWheel();
